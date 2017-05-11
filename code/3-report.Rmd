@@ -1,0 +1,262 @@
+---
+title: "Community assets and capacity mapping"
+author: "Elena Seydel"
+date: "18 April 2017"
+output:
+  word_document:
+    toc: TRUE
+  classoption: landscape
+  fig_width: 15
+  fig_height: 8
+---
+
+<!-- To run in console -->
+<!-- install.packages("rmarkdown", repos="http://cran.us.r-project.org") -->
+<!-- library(rmarkdown) -->
+<!-- rmarkdown::render('code/3-report.Rmd')  -->
+
+
+#  1) Data load
+
+#  2) Introductory questions (to be filled by surveyor)
+
+##  2.1) Status of surveyor
+
+```{r p.statussurveyor, echo=FALSE, fig.height=8, fig.width=15}
+plot (p.statussurveyor)
+```
+
+##  2.2) Country where mapping takes place
+
+```{r p.mapcountry, echo=FALSE, fig.height=8, fig.width=15}
+plot (p.mapcountry)
+```
+
+##  2.3) Governorate/District where mapping takes place
+
+```{r p.mapgovernorate, echo=FALSE, fig.height=8, fig.width=15}
+plot (p.mapgovernorate)
+```
+
+##  2.4) City where mapping takes place
+
+```{r p.mapcity, echo=FALSE, fig.height=8, fig.width=15}
+plot (p.mapcity)
+```
+
+##  2.5) Type of collaborating community in this mapping
+
+```{r p.collabunit, echo=FALSE, fig.height=8, fig.width=15}
+plot (p.collabunit)
+```
+
+##  2.6) List of collaborating entities (for internal use only)
+
+```{r p.unitslist, echo=FALSE, fig.height=8, fig.width=15}
+plot (p.unitslist)
+```
+
+
+#  3) Community demographics & structure
+##  3.1) Community type (formal/informal/individual)
+
+```{r p.commtype, echo=FALSE, fig.height=8, fig.width=15}
+plot (p.commtype)
+```
+
+##  3.2) Demographics of communities (informal & formal)
+
+##  3.2.1) Way of establishment
+
+```{r p.establishment, echo=FALSE, fig.height=8, fig.width=15}
+plot (p.establishment)
+```
+
+##  3.2.2) Community structure
+
+```{r p.structure, echo=FALSE, fig.height=8, fig.width=15}
+plot (p.structure)
+```
+
+##  3.2.3) Membership requirements
+
+```{r p.membership, echo=FALSE, fig.height=8, fig.width=15}
+plot (p.membership)
+```
+
+##  3.2.4) Members
+
+```{r p.members, echo=FALSE, fig.height=8, fig.width=15}
+plot (p.members)
+```
+
+##  3.2.5) Community size
+
+```{r p.size, echo=FALSE, fig.height=8, fig.width=15}
+plot (p.size)
+```
+
+##  3.2.6) Proportion of female, elderly, children within the community
+
+```{r p.dependencies, echo=FALSE, fig.height=8, fig.width=15}
+plot (p.dependencies)
+```
+
+##  3.2.7) Ethical standards in the community
+
+```{r p.ethics, echo=FALSE, fig.height=8, fig.width=15}
+plot (p.ethics)
+```
+
+##  3.3) Demographics of engaged individuals
+
+##  3.3.1) Sex
+
+```{r p.indsex, echo=FALSE, fig.height=8, fig.width=15}
+plot (p.indsex)
+```
+
+##  3.3.2) Age*
+
+
+##  3.3.3) Nationality
+
+```{r p.indnationality, echo=FALSE, fig.height=8, fig.width=15}
+plot (p.indnationality)
+```
+
+
+#  4) Community work & services
+##  4.1) Working area
+
+```{r p.workarea, echo=FALSE, fig.height=8, fig.width=15}
+plot (p.workarea)
+```
+
+##       Prioritized working area
+
+```{r p.workarea.prio, echo=FALSE, fig.height=8, fig.width=15}
+plot (p.workarea.prio)
+```
+
+##  4.2) Community services
+
+```{r p.services, echo=FALSE, fig.height=8, fig.width=15}
+plot (p.services)
+```
+
+##       Prioritized community services
+
+```{r p.services.prio, echo=FALSE, fig.height=8, fig.width=15}
+plot (p.services.prio)
+```
+
+##  4.3) Recognition of engaged individual (entity = individual) within the community
+
+```{r p.indrecognition, echo=FALSE, fig.height=8, fig.width=15}
+plot (p.indrecognition)
+```
+
+##  4.4) Skills of enganged individual (entity = individual)
+
+```{r p.indskills, echo=FALSE, fig.height=8, fig.width=15}
+plot (p.indskills)
+```
+
+##  4.5) Talents of enganged individual (entity = individual)
+
+```{r p.indtalents, echo=FALSE, fig.height=8, fig.width=15}
+plot (p.indtalents)
+```
+
+
+#  5) Referrals*
+
+#  6) Targeted groups
+##  6.1) Percent of targeted groups
+
+```{r p.poc, echo=FALSE, fig.height=8, fig.width=15}
+plot (p.poc)
+```
+
+##  6.2) Specific groups of concern
+
+```{r p.specific, echo=FALSE, fig.height=8, fig.width=15}
+plot (p.specific)
+```
+
+
+#  7) Active community members
+##  7.1) Type of active community members
+
+```{r p.actmembers, echo=FALSE, fig.height=8, fig.width=15}
+plot (p.actmembers)
+```
+
+##  7.2) Duration of community work
+
+```{r p.duration, echo=FALSE, fig.height=8, fig.width=15}
+plot (p.duration)
+```
+
+
+#  8) Communication channels
+##  8.1) Type of used communication shannels
+
+```{r p.channels, echo=FALSE, fig.height=8, fig.width=15}
+plot (p.channels)
+```
+
+##  8.2) List of manual entries of specific communication channels
+
+```{r p.addresses, echo=FALSE, fig.height=8, fig.width=15}
+plot (p.addresses)
+```
+
+#  9) Meeting space
+##  9.1) Type of meeting space
+
+```{r p.meetingspace, echo=FALSE, fig.height=8, fig.width=15}
+plot (p.meetingspace)
+```
+
+
+##  9.2) Type of access to meeting space
+
+```{r p.access, echo=FALSE, fig.height=8, fig.width=15}
+plot (p.access)
+```
+
+##  9.3) Conduciveness of meeting space
+
+```{r p.conduciveness, echo=FALSE, fig.height=8, fig.width=15}
+plot (p.conduciveness)
+```
+
+
+# 10) Community challenges
+
+```{r p.challenges, echo=FALSE, fig.height=8, fig.width=15}
+plot (p.challenges)
+```
+
+
+# 11) Community collaboration
+## 11.1) Reward to motivate community work
+
+```{r p.reward, echo=FALSE, fig.height=8, fig.width=15}
+plot (p.reward)
+```
+
+## 11.2) Collaboration with UNHCR
+
+```{r p.collabunhcr, echo=FALSE, fig.height=8, fig.width=15}
+plot (p.collabunhcr)
+```
+
+
+# 12) Contact details (for internal use only)
+
+```{r p.contact, echo=FALSE, fig.height=8, fig.width=15}
+plot (p.contact)
+```

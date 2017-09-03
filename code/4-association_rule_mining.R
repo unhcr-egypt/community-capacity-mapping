@@ -93,5 +93,3 @@ plot(r, interactive=TRUE)
 # itemFrequencyPlot(items(r_summon), topN=20)
 # plot(head(sort(r_summon, by="lift"), 50), method="graph", control=list(cex=.7))
 
-### Network Visualisation ------
-# http://kateto.net/network-visualization

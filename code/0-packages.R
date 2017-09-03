@@ -59,6 +59,16 @@ packages <- c(
   "viridis", # Default Color Maps from 'matplotlib'
   "fields", ## Tools for Spatial Data
 
+  ###### Packages for Rules mining and Network analysis - http://kateto.net/network-visualization
+  "arules",  "arulesViz",
+  "igraph",
+  "network",
+  "sna",
+  "visNetwork",
+  "threejs",
+  "networkD3",
+  "ndtv",
+  "animation",
   ##################################################################
   ### Packages for Modeling Stage
 

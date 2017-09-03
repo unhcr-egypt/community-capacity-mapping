@@ -1,8 +1,8 @@
-## In this script all possible variables of the 'community assets 
-## and capacity mapping' kobo project are visualized in bar charts, 
+## In this script all possible variables of the 'community assets
+## and capacity mapping' kobo project are visualized in bar charts,
 ## textual details are combined to useful lists
 
-## Used date: Kopo xls form -> data/form.csv <- static as reference 
+## Used date: Kopo xls form -> data/form.csv <- static as reference
 ##            Kobo data     -> data/data.csv <- needs to be added and updated
 ## (here only a dummy data set is used)
 
@@ -15,7 +15,7 @@
 ##  1) Data load
 
 ##  ----------(to be filled by surveyor)----------------
-##  2) Introductory questions 
+##  2) Introductory questions
 ##  2.1) Status of surveyor
 ##  2.2) Country where mapping takes place
 ##  2.3) Governorate/District where mapping takes place
@@ -76,11 +76,12 @@
 ## 12) Contact details (for internal use only)
 #######################################
 
+source("code/0-packages.R")
 
 ############################################################################################
 ############################################################################################
 ## 1) load data
-data.or <- read.csv("data/data.csv", sep=";", encoding="UTF-8", na.strings="n/a")
+data.or <- read.csv("data/data.csv", sep=",", encoding="UTF-8", na.strings="n/a")
 data.process <- data.frame(data.or)
 
 form.or <- read.csv("data/form.csv", sep=";", encoding="UTF-8", na.strings="n/a")
@@ -103,8 +104,8 @@ data$freq <- as.numeric(data$freq/sum(data$freq))
 rm(df.statussurveyor)
 #######################################
 ## PLOT community types in percent
-p.statussurveyor <- ggplot(data=data, aes(x=label, y=freq)) + 
-  geom_bar(stat="identity", fill="#0072bc", colour="#3f3f3f",  alpha=2/3) + 
+p.statussurveyor <- ggplot(data=data, aes(x=label, y=freq)) +
+  geom_bar(stat="identity", fill="#0072bc", colour="#3f3f3f",  alpha=2/3) +
   scale_x_discrete(labels = function(x) str_wrap(x, width = 35))+
   theme_plot() +
   theme(panel.grid.major.x = element_line(color = "gray10", size = 0.2),
@@ -132,8 +133,8 @@ data$freq <- as.numeric(data$freq/sum(data$freq))
 rm(df.mapcountry)
 #######################################
 ## PLOT countries in percent
-p.mapcountry <- ggplot(data=data, aes(x=label, y=freq)) + 
-  geom_bar(stat="identity", fill="#0072bc", colour="#3f3f3f",  alpha=2/3) + 
+p.mapcountry <- ggplot(data=data, aes(x=label, y=freq)) +
+  geom_bar(stat="identity", fill="#0072bc", colour="#3f3f3f",  alpha=2/3) +
   scale_x_discrete(labels = function(x) str_wrap(x, width = 35))+
   theme_plot() +
   theme(panel.grid.major.x = element_line(color = "gray10", size = 0.2),
@@ -160,8 +161,8 @@ data$freq <- as.numeric(data$freq/sum(data$freq))
 rm(df.mapgovernorate)
 #######################################
 ## PLOT governorates in percent
-p.mapgovernorate <- ggplot(data=data, aes(x=label, y=freq)) + 
-  geom_bar(stat="identity", fill="#0072bc", colour="#3f3f3f",  alpha=2/3) + 
+p.mapgovernorate <- ggplot(data=data, aes(x=label, y=freq)) +
+  geom_bar(stat="identity", fill="#0072bc", colour="#3f3f3f",  alpha=2/3) +
   scale_x_discrete(labels = function(x) str_wrap(x, width = 35))+
   theme_plot() +
   theme(panel.grid.major.x = element_line(color = "gray10", size = 0.2),
@@ -186,8 +187,8 @@ data$freq <- as.numeric(data$freq/sum(data$freq))
 rm(df.mapcity)
 #######################################
 ## PLOT cities in percent
-p.mapcity <- ggplot(data=data, aes(x=var, y=freq)) + 
-  geom_bar(stat="identity", fill="#0072bc", colour="#3f3f3f",  alpha=2/3) + 
+p.mapcity <- ggplot(data=data, aes(x=var, y=freq)) +
+  geom_bar(stat="identity", fill="#0072bc", colour="#3f3f3f",  alpha=2/3) +
   scale_x_discrete(labels = function(x) str_wrap(x, width = 35))+
   theme_plot() +
   theme(panel.grid.major.x = element_line(color = "gray10", size = 0.2),
@@ -209,23 +210,23 @@ df.collabunit <- data.intro[,8:16]
 colnames(df.collabunit) <- c("Community members", "Interest-based organization", "Agency", "Authority",
                              "Informal community group", "Professional association", "Non-Governmental organization",
                              "None", "Community-based organization")
-  data <- reshape(df.collabunit, 
+  data <- reshape(df.collabunit,
                 varying = c("Community members", "Interest-based organization", "Agency", "Authority",
                             "Informal community group", "Professional association", "Non-Governmental organization",
-                            "None", "Community-based organization"), 
+                            "None", "Community-based organization"),
                 v.names = "freq",
-                timevar = "var", 
+                timevar = "var",
                 times = c("Community members", "Interest-based organization", "Agency", "Authority",
                           "Informal community group", "Professional association", "Non-Governmental organization",
-                          "None", "Community-based organization"), 
+                          "None", "Community-based organization"),
                 new.row.names = 1:2000,
                 direction = "long")
 data$freq <- as.numeric(data$freq/sum(data$freq))
 rm(df.collabunit)
 #######################################
 ## PLOT type of collaborating entity in this mapping in percent
-p.collabunit <- ggplot(data=data, aes(x=var, y=freq)) + 
-  geom_bar(stat="identity", fill="#0072bc", colour="#3f3f3f",  alpha=2/3) + 
+p.collabunit <- ggplot(data=data, aes(x=var, y=freq)) +
+  geom_bar(stat="identity", fill="#0072bc", colour="#3f3f3f",  alpha=2/3) +
   scale_x_discrete(labels = function(x) str_wrap(x, width = 35))+
   theme_plot() +
   theme(panel.grid.major.x = element_line(color = "gray10", size = 0.2),
@@ -242,8 +243,8 @@ p.collabunit <- ggplot(data=data, aes(x=var, y=freq)) +
 plot(p.collabunit)
 
 
-## 2.6) List of collaborating entities 
-df.unitslist <- data.process[,c(1,5,6,8:10,21:22)]   
+## 2.6) List of collaborating entities
+df.unitslist <- data.process[,c(1,5,6,8:10,21:22)]
 colnames(df.unitslist) <- c("Date", "Name of surveyor", "Status of surveyor", "Country", "Governorate", "City", "Name of collaborating entity", "Type of collaborating entity")
 mytheme <- gridExtra::ttheme_default(
   core = list(fg_params=list(cex = 0.8)),
@@ -251,7 +252,7 @@ mytheme <- gridExtra::ttheme_default(
   rowhead = list(fg_params=list(cex = 0.8)))
 p.unitslist <- tableGrob(df.unitslist, theme=mytheme)
 plot(p.unitslist)
-rm(df.unitslist)  
+rm(df.unitslist)
 
 
 rm(data.intro)
@@ -271,8 +272,8 @@ data$freq <- as.numeric(data$freq/sum(data$freq))
 rm(df.commtype)
 #######################################
 ## PLOT community types in percent
-p.commtype <- ggplot(data=data, aes(x=label, y=freq)) + 
-  geom_bar(stat="identity", fill="#0072bc", colour="#3f3f3f",  alpha=2/3) + 
+p.commtype <- ggplot(data=data, aes(x=label, y=freq)) +
+  geom_bar(stat="identity", fill="#0072bc", colour="#3f3f3f",  alpha=2/3) +
   scale_x_discrete(labels = function(x) str_wrap(x, width = 35))+
   theme_plot() +
   theme(panel.grid.major.x = element_line(color = "gray10", size = 0.2),
@@ -291,21 +292,21 @@ plot(p.commtype)
 ## 3.2) Demographics of communities (informal & formal)
 ## 3.2.1) Way of establishment
 df.establishment <- data.demogr[,7:16]
-colnames(df.establishment) <- c("With support of fund provider", "By the government", 
+colnames(df.establishment) <- c("With support of fund provider", "By the government",
                                 "as a professional association", "Through traditional leaders", "With support of umbrella organization",
                                 "as a public institution", "Through religious leaders", "Initiated by interested group of people",
                                 "With support of diaspora members", "Through individual/family initiative")
-data <- reshape(df.establishment, 
-                varying = c("With support of fund provider", "By the government", 
+data <- reshape(df.establishment,
+                varying = c("With support of fund provider", "By the government",
                             "as a professional association", "Through traditional leaders", "With support of umbrella organization",
                             "as a public institution", "Through religious leaders", "Initiated by interested group of people",
-                            "With support of diaspora members", "Through individual/family initiative"), 
+                            "With support of diaspora members", "Through individual/family initiative"),
                 v.names = "freq",
-                timevar = "var", 
-                times = c("With support of fund provider", "By the government", 
+                timevar = "var",
+                times = c("With support of fund provider", "By the government",
                           "as a professional association", "Through traditional leaders", "With support of umbrella organization",
                           "as a public institution", "Through religious leaders", "Initiated by interested group of people",
-                          "With support of diaspora members", "Through individual/family initiative"), 
+                          "With support of diaspora members", "Through individual/family initiative"),
                 new.row.names = 1:2000,
                 direction = "long")
 data <- data[!is.na(data$freq),]
@@ -313,8 +314,8 @@ data$freq <- as.numeric(data$freq/sum(data$freq))
 rm(df.establishment)
 #######################################
 ## PLOT way of establishment in percent
-p.establishment <- ggplot(data=data, aes(x=var, y=freq)) + 
-  geom_bar(stat="identity", fill="#0072bc", colour="#3f3f3f",  alpha=2/3) + 
+p.establishment <- ggplot(data=data, aes(x=var, y=freq)) +
+  geom_bar(stat="identity", fill="#0072bc", colour="#3f3f3f",  alpha=2/3) +
   scale_x_discrete(labels = function(x) str_wrap(x, width = 35))+
   theme_plot() +
   theme(panel.grid.major.x = element_line(color = "gray10", size = 0.2),
@@ -342,8 +343,8 @@ data$freq <- as.numeric(data$freq/sum(data$freq))
 rm(df.structure)
 #######################################
 ## PLOT community structure in percent
-p.structure <- ggplot(data=data, aes(x=label, y=freq)) + 
-  geom_bar(stat="identity", fill="#0072bc", colour="#3f3f3f",  alpha=2/3) + 
+p.structure <- ggplot(data=data, aes(x=label, y=freq)) +
+  geom_bar(stat="identity", fill="#0072bc", colour="#3f3f3f",  alpha=2/3) +
   scale_x_discrete(labels = function(x) str_wrap(x, width = 35))+
   theme_plot() +
   theme(panel.grid.major.x = element_line(color = "gray10", size = 0.2),
@@ -371,8 +372,8 @@ data$freq <- as.numeric(data$freq/sum(data$freq))
 rm(df.membership)
 #######################################
 ## PLOT membership requirements in percent
-p.membership <- ggplot(data=data, aes(x=label, y=freq)) + 
-  geom_bar(stat="identity", fill="#0072bc", colour="#3f3f3f",  alpha=2/3) + 
+p.membership <- ggplot(data=data, aes(x=label, y=freq)) +
+  geom_bar(stat="identity", fill="#0072bc", colour="#3f3f3f",  alpha=2/3) +
   scale_x_discrete(labels = function(x) str_wrap(x, width = 35))+
   theme_plot() +
   theme(panel.grid.major.x = element_line(color = "gray10", size = 0.2),
@@ -394,15 +395,15 @@ df.members <- data.demogr[,20:26]
 colnames(df.members) <- c("Refugees/Asylum-seekers", "Internally displaced persons",
                           "Diaspora members", "Legally residing foreign nationals",
                           "Persons in mixed movement situtations", "Returnees", "Host community members")
-data <- reshape(df.members, 
+data <- reshape(df.members,
                 varying = c("Refugees/Asylum-seekers", "Internally displaced persons",
                             "Diaspora members", "Legally residing foreign nationals",
-                            "Persons in mixed movement situtations", "Returnees", "Host community members"), 
+                            "Persons in mixed movement situtations", "Returnees", "Host community members"),
                 v.names = "freq",
-                timevar = "var", 
+                timevar = "var",
                 times = c("Refugees/Asylum-seekers", "Internally displaced persons",
                           "Diaspora members", "Legally residing foreign nationals",
-                          "Persons in mixed movement situtations", "Returnees", "Host community members"), 
+                          "Persons in mixed movement situtations", "Returnees", "Host community members"),
                 new.row.names = 1:2000,
                 direction = "long")
 data <- data[!is.na(data$freq),]
@@ -410,8 +411,8 @@ data$freq <- as.numeric(data$freq/sum(data$freq))
 rm(df.members)
 #######################################
 ## PLOT community members in percent
-p.members <- ggplot(data=data, aes(x=var, y=freq)) + 
-  geom_bar(stat="identity", fill="#0072bc", colour="#3f3f3f",  alpha=2/3) + 
+p.members <- ggplot(data=data, aes(x=var, y=freq)) +
+  geom_bar(stat="identity", fill="#0072bc", colour="#3f3f3f",  alpha=2/3) +
   scale_x_discrete(labels = function(x) str_wrap(x, width = 35))+
   theme_plot() +
   theme(panel.grid.major.x = element_line(color = "gray10", size = 0.2),
@@ -440,8 +441,8 @@ data$freq <- as.numeric(data$freq/sum(data$freq))
 rm(df.size)
 #######################################
 ## PLOT community size in percent
-p.size <- ggplot(data=data, aes(x=label, y=freq)) + 
-  geom_bar(stat="identity", fill="#0072bc", colour="#3f3f3f",  alpha=2/3) + 
+p.size <- ggplot(data=data, aes(x=label, y=freq)) +
+  geom_bar(stat="identity", fill="#0072bc", colour="#3f3f3f",  alpha=2/3) +
   scale_x_discrete(labels = function(x) str_wrap(x, width = 35))+
   theme_plot() +
   theme(panel.grid.major.x = element_line(color = "gray10", size = 0.2),
@@ -460,11 +461,11 @@ plot(p.size)
 ## 3.2.6) Proportion of female, elderly, children within the community
 df.dependencies <- data.demogr[,28:30]
 colnames(df.dependencies) <- c("Female", "Elderly", "Children")
-data <- reshape(df.dependencies, 
-                varying = c("Female", "Elderly", "Children"), 
+data <- reshape(df.dependencies,
+                varying = c("Female", "Elderly", "Children"),
                 v.names = "freq",
-                timevar = "var", 
-                times = c("Female", "Elderly", "Children"), 
+                timevar = "var",
+                times = c("Female", "Elderly", "Children"),
                 new.row.names = 1:2000,
                 direction = "long")
 data["id"] <- NULL
@@ -473,8 +474,8 @@ data$freq <- as.numeric(data$freq/sum(data$freq))
 rm(df.dependencies)
 #######################################
 ## PLOT specific community groups in percent
-p.dependencies <- ggplot(data=data, aes(x=var, y=freq)) + 
-  geom_bar(stat="identity", fill="#0072bc", colour="#3f3f3f",  alpha=2/3) + 
+p.dependencies <- ggplot(data=data, aes(x=var, y=freq)) +
+  geom_bar(stat="identity", fill="#0072bc", colour="#3f3f3f",  alpha=2/3) +
   scale_x_discrete(labels = function(x) str_wrap(x, width = 35))+
   theme_plot() +
   theme(panel.grid.major.x = element_line(color = "gray10", size = 0.2),
@@ -496,15 +497,15 @@ df.ethics <- data.demogr[,32:36]
 colnames(df.ethics) <- c("Once complaint is received", "Through code of conduct",
                                "Through agreed practices", "Have not thought of it",
                                "We plan to adopt minimum behavioural standard")
-data <- reshape(df.ethics, 
+data <- reshape(df.ethics,
                 varying = c("Once complaint is received", "Through code of conduct",
                             "Through agreed practices", "Have not thought of it",
-                            "We plan to adopt minimum behavioural standard"), 
+                            "We plan to adopt minimum behavioural standard"),
                 v.names = "freq",
-                timevar = "var", 
+                timevar = "var",
                 times = c("Once complaint is received", "Through code of conduct",
                           "Through agreed practices", "Have not thought of it",
-                          "We plan to adopt minimum behavioural standard"), 
+                          "We plan to adopt minimum behavioural standard"),
                 new.row.names = 1:2000,
                 direction = "long")
 data <- data[!is.na(data$freq),]
@@ -512,8 +513,8 @@ data$freq <- as.numeric(data$freq/sum(data$freq))
 rm(df.ethics)
 #######################################
 ## PLOT community's ethical standards in percent
-p.ethics <- ggplot(data=data, aes(x=var, y=freq)) + 
-  geom_bar(stat="identity", fill="#0072bc", colour="#3f3f3f",  alpha=2/3) + 
+p.ethics <- ggplot(data=data, aes(x=var, y=freq)) +
+  geom_bar(stat="identity", fill="#0072bc", colour="#3f3f3f",  alpha=2/3) +
   scale_x_discrete(labels = function(x) str_wrap(x, width = 35))+
   theme_plot() +
   theme(panel.grid.major.x = element_line(color = "gray10", size = 0.2),
@@ -542,8 +543,8 @@ data$freq <- as.numeric(data$freq/sum(data$freq))
 rm(df.indsex)
 #######################################
 ## PLOT indivisual's sex in percent
-p.indsex <- ggplot(data=data, aes(x=label, y=freq)) + 
-  geom_bar(stat="identity", fill="#0072bc", colour="#3f3f3f",  alpha=2/3) + 
+p.indsex <- ggplot(data=data, aes(x=label, y=freq)) +
+  geom_bar(stat="identity", fill="#0072bc", colour="#3f3f3f",  alpha=2/3) +
   scale_x_discrete(labels = function(x) str_wrap(x, width = 35))+
   theme_plot() +
   theme(panel.grid.major.x = element_line(color = "gray10", size = 0.2),
@@ -562,15 +563,15 @@ plot(p.indsex)
 # ## 3.3.2) Age
 # df.indage <- data.frame(data.demogr[,39])
 # data <- data.frame(df.indage[!apply(df.indage == "", 1, all),])
-# data$age <- 
+# data$age <-
 # colnames(data) <- c("age")
 # data <- merge(data, form.or, by = "name")
-# 
+#
 # rm(df.indage)
 # #######################################
 # ## PLOT indivisual's age in percent
-# p.indage <- ggplot(data=data, aes(x=label, y=freq)) + 
-#   geom_bar(stat="identity", fill="#0072bc", colour="#3f3f3f",  alpha=2/3) + 
+# p.indage <- ggplot(data=data, aes(x=label, y=freq)) +
+#   geom_bar(stat="identity", fill="#0072bc", colour="#3f3f3f",  alpha=2/3) +
 #   scale_x_discrete(labels = function(x) str_wrap(x, width = 35))+
 #   theme_plot() +
 #   theme(panel.grid.major.x = element_line(color = "gray10", size = 0.2),
@@ -599,8 +600,8 @@ data$freq <- as.numeric(data$freq/sum(data$freq))
 rm(df.indnationality)
 #######################################
 ## PLOT individual's nationality in percent
-p.indnationality <- ggplot(data=data, aes(x=label, y=freq)) + 
-  geom_bar(stat="identity", fill="#0072bc", colour="#3f3f3f",  alpha=2/3) + 
+p.indnationality <- ggplot(data=data, aes(x=label, y=freq)) +
+  geom_bar(stat="identity", fill="#0072bc", colour="#3f3f3f",  alpha=2/3) +
   scale_x_discrete(labels = function(x) str_wrap(x, width = 35))+
   theme_plot() +
   theme(panel.grid.major.x = element_line(color = "gray10", size = 0.2),
@@ -629,8 +630,8 @@ data$freq <- as.numeric(data$freq/sum(data$freq))
 rm(df.indstatus)
 #######################################
 ## PLOT indivdual's legal status in percent
-p.indstatus <- ggplot(data=data, aes(x=label, y=freq)) + 
-  geom_bar(stat="identity", fill="#0072bc", colour="#3f3f3f",  alpha=2/3) + 
+p.indstatus <- ggplot(data=data, aes(x=label, y=freq)) +
+  geom_bar(stat="identity", fill="#0072bc", colour="#3f3f3f",  alpha=2/3) +
   scale_x_discrete(labels = function(x) str_wrap(x, width = 35))+
   theme_plot() +
   theme(panel.grid.major.x = element_line(color = "gray10", size = 0.2),
@@ -662,29 +663,29 @@ colnames(df.workarea) <- c("Education", "Child Protection", "Housing/land issues
                            "Legal Aid/Support", "Specific group empowerment", "Protection and human rights",
                            "Integration or Reintegration", "Access to justice")
 
-data <- reshape(df.workarea, 
+data <- reshape(df.workarea,
                 varying = c("Education", "Child Protection", "Housing/land issues", "Water/Sanitation/Hygiene",
                             "Health/Nutrition", "Gender empowerment", "Food and household materials",
                             "Mental Health & Psychosocial Support", "Social Cohesion", "Detention monitoring and alternatives to detention",
-                            "Birth registration and other documentation", "Livelihood & Income generation", 
+                            "Birth registration and other documentation", "Livelihood & Income generation",
                             "Legal Aid/Support", "Specific group empowerment", "Protection and human rights",
-                            "Integration or Reintegration", "Access to justice"), 
+                            "Integration or Reintegration", "Access to justice"),
                 v.names = "freq",
-                timevar = "var", 
+                timevar = "var",
                 times = c("Education", "Child Protection", "Housing/land issues", "Water/Sanitation/Hygiene",
                           "Health/Nutrition", "Gender empowerment", "Food and household materials",
                           "Mental Health & Psychosocial Support", "Social Cohesion", "Detention monitoring and alternatives to detention",
-                          "Birth registration and other documentation", "Livelihood & Income generation", 
+                          "Birth registration and other documentation", "Livelihood & Income generation",
                           "Legal Aid/Support", "Specific group empowerment", "Protection and human rights",
-                          "Integration or Reintegration", "Access to justice"), 
+                          "Integration or Reintegration", "Access to justice"),
                 new.row.names = 1:2000,
                 direction = "long")
 data$freq <- as.numeric(data$freq/sum(data$freq))
 rm(df.workarea)
 #######################################
 ## PLOT working area in percent
-p.workarea <- ggplot(data=data, aes(x=var, y=freq)) + 
-  geom_bar(stat="identity", fill="#0072bc", colour="#3f3f3f",  alpha=2/3) + 
+p.workarea <- ggplot(data=data, aes(x=var, y=freq)) +
+  geom_bar(stat="identity", fill="#0072bc", colour="#3f3f3f",  alpha=2/3) +
   scale_x_discrete(labels = function(x) str_wrap(x, width = 35))+
   theme_plot() +
   theme(panel.grid.major.x = element_line(color = "gray10", size = 0.2),
@@ -712,8 +713,8 @@ data$freq <- as.numeric(data$freq/sum(data$freq))
 rm(workarea.prio)
 #######################################
 ## PLOT indivisual's nationality in percent
-p.workarea.prio <- ggplot(data=data, aes(x=label, y=freq)) + 
-  geom_bar(stat="identity", fill="#0072bc", colour="#3f3f3f",  alpha=2/3) + 
+p.workarea.prio <- ggplot(data=data, aes(x=label, y=freq)) +
+  geom_bar(stat="identity", fill="#0072bc", colour="#3f3f3f",  alpha=2/3) +
   scale_x_discrete(labels = function(x) str_wrap(x, width = 35))+
   theme_plot() +
   theme(panel.grid.major.x = element_line(color = "gray10", size = 0.2),
@@ -743,7 +744,7 @@ colnames(df.services) <- c("Sharing information on availability of and accessibi
 "Facilitating feedback", "Identifying concerns, challenges and solutions",
 "Resolving inter-community disputes", "Empowering certain segment of community",
 "Language support", "Technical/professional advices", "Preventative activities")
-data <- reshape(df.services, 
+data <- reshape(df.services,
                 varying = c("Sharing information on availability of and accessibility to the services", "Awareness activities",
                             "Community dialogue", "Organizing or participating in community events ",
                             "Recreational activities", "Skill and knowledge development support",
@@ -753,9 +754,9 @@ data <- reshape(df.services,
                             "Facilitating access to services", "Facilitating complaints to service provider",
                             "Facilitating feedback", "Identifying concerns, challenges and solutions",
                             "Resolving inter-community disputes", "Empowering certain segment of community",
-                            "Language support", "Technical/professional advices", "Preventative activities"), 
+                            "Language support", "Technical/professional advices", "Preventative activities"),
                 v.names = "freq",
-                timevar = "var", 
+                timevar = "var",
                 times = c("Sharing information on availability of and accessibility to the services", "Awareness activities",
                           "Community dialogue", "Organizing or participating in community events ",
                           "Recreational activities", "Skill and knowledge development support",
@@ -765,15 +766,15 @@ data <- reshape(df.services,
                           "Facilitating access to services", "Facilitating complaints to service provider",
                           "Facilitating feedback", "Identifying concerns, challenges and solutions",
                           "Resolving inter-community disputes", "Empowering certain segment of community",
-                          "Language support", "Technical/professional advices", "Preventative activities"), 
+                          "Language support", "Technical/professional advices", "Preventative activities"),
                 new.row.names = 1:2000,
                 direction = "long")
 data$freq <- as.numeric(data$freq/sum(data$freq))
 rm(df.services)
 #######################################
 ## PLOT community services in percent
-p.services <- ggplot(data=data, aes(x=var, y=freq)) + 
-  geom_bar(stat="identity", fill="#0072bc", colour="#3f3f3f",  alpha=2/3) + 
+p.services <- ggplot(data=data, aes(x=var, y=freq)) +
+  geom_bar(stat="identity", fill="#0072bc", colour="#3f3f3f",  alpha=2/3) +
   scale_x_discrete(labels = function(x) str_wrap(x, width = 35))+
   theme_plot() +
   theme(panel.grid.major.x = element_line(color = "gray10", size = 0.2),
@@ -802,8 +803,8 @@ data$freq <- as.numeric(data$freq/sum(data$freq))
 rm(services.prio)
 #######################################
 ## PLOT prioritizes community services in percent
-p.services.prio <- ggplot(data=data, aes(x=label, y=freq)) + 
-  geom_bar(stat="identity", fill="#0072bc", colour="#3f3f3f",  alpha=2/3) + 
+p.services.prio <- ggplot(data=data, aes(x=label, y=freq)) +
+  geom_bar(stat="identity", fill="#0072bc", colour="#3f3f3f",  alpha=2/3) +
   scale_x_discrete(labels = function(x) str_wrap(x, width = 35))+
   theme_plot() +
   theme(panel.grid.major.x = element_line(color = "gray10", size = 0.2),
@@ -825,32 +826,32 @@ df.indrecognition <- data.commwork[,44:59]
 colnames(df.indrecognition) <- c("as social activist", "as helper or supporter", "as solution finder",
                                  "as influential person", "as counsellor/advisor", "as religious leader",
                                  "as traditional leader", "as community innovator", "as community worker/volunteer",
-                                 "as community intellectual", "as community mediator or negotiator", 
+                                 "as community intellectual", "as community mediator or negotiator",
                                  "as women activist", "as youth activist", "as recreationist", "as role model",
                                  "as informant")
-data <- reshape(df.indrecognition, 
+data <- reshape(df.indrecognition,
                 varying = c("as social activist", "as helper or supporter", "as solution finder",
                             "as influential person", "as counsellor/advisor", "as religious leader",
                             "as traditional leader", "as community innovator", "as community worker/volunteer",
-                            "as community intellectual", "as community mediator or negotiator", 
+                            "as community intellectual", "as community mediator or negotiator",
                             "as women activist", "as youth activist", "as recreationist", "as role model",
-                            "as informant"), 
+                            "as informant"),
                 v.names = "freq",
-                timevar = "var", 
+                timevar = "var",
                 times = c("as social activist", "as helper or supporter", "as solution finder",
                           "as influential person", "as counsellor/advisor", "as religious leader",
                           "as traditional leader", "as community innovator", "as community worker/volunteer",
-                          "as community intellectual", "as community mediator or negotiator", 
+                          "as community intellectual", "as community mediator or negotiator",
                           "as women activist", "as youth activist", "as recreationist", "as role model",
-                          "as informant"), 
+                          "as informant"),
                 new.row.names = 1:2000,
                 direction = "long")
 data$freq <- as.numeric(data$freq/sum(data$freq))
 rm(df.indrecognition)
 #######################################
 ## PLOT individual's social recognition within the community in percent
-p.indrecognition <- ggplot(data=data, aes(x=var, y=freq)) + 
-  geom_bar(stat="identity", fill="#0072bc", colour="#3f3f3f",  alpha=2/3) + 
+p.indrecognition <- ggplot(data=data, aes(x=var, y=freq)) +
+  geom_bar(stat="identity", fill="#0072bc", colour="#3f3f3f",  alpha=2/3) +
   scale_x_discrete(labels = function(x) str_wrap(x, width = 35))+
   theme_plot() +
   theme(panel.grid.major.x = element_line(color = "gray10", size = 0.2),
@@ -877,7 +878,7 @@ colnames(df.indskills) <- c("Electrician", "Car servicing", "Entrepreneur/vender
                             "Manufacturing", "Facilitating training", "Beautician/styling", "Appliance repair and maintenance",
                             "Trucking", "Construction", "Mechanical", "Career counseling/support with formal documents",
                             "Bookkeeping, accounting, auditing", "Sign language")
-data <- reshape(df.indskills, 
+data <- reshape(df.indskills,
                 varying = c("Electrician", "Car servicing", "Entrepreneur/vender", "Computer support",
                             "Plumbing/fitting", "Handicraft", "Veterinary technology", "Dental care",
                             "Pharmacist", "Carpentry/Joinery", "Shelter/housing mediation/negotiation",
@@ -885,9 +886,9 @@ data <- reshape(df.indskills,
                             "Children services", "Tailoring/fashion design", "Health care and social assistance",
                             "Manufacturing", "Facilitating training", "Beautician/styling", "Appliance repair and maintenance",
                             "Trucking", "Construction", "Mechanical", "Career counseling/support with formal documents",
-                            "Bookkeeping, accounting, auditing", "Sign language"), 
+                            "Bookkeeping, accounting, auditing", "Sign language"),
                 v.names = "freq",
-                timevar = "var", 
+                timevar = "var",
                 times = c("Electrician", "Car servicing", "Entrepreneur/vender", "Computer support",
                           "Plumbing/fitting", "Handicraft", "Veterinary technology", "Dental care",
                           "Pharmacist", "Carpentry/Joinery", "Shelter/housing mediation/negotiation",
@@ -895,7 +896,7 @@ data <- reshape(df.indskills,
                           "Children services", "Tailoring/fashion design", "Health care and social assistance",
                           "Manufacturing", "Facilitating training", "Beautician/styling", "Appliance repair and maintenance",
                           "Trucking", "Construction", "Mechanical", "Career counseling/support with formal documents",
-                          "Bookkeeping, accounting, auditing", "Sign language"), 
+                          "Bookkeeping, accounting, auditing", "Sign language"),
                 new.row.names = 1:2000,
                 direction = "long")
 data <- data[!is.na(data$freq),]
@@ -903,8 +904,8 @@ data$freq <- as.numeric(data$freq/sum(data$freq))
 rm(df.indskills)
 #######################################
 ## PLOT individual's skills within the community in percent
-p.indskills <- ggplot(data=data, aes(x=var, y=freq)) + 
-  geom_bar(stat="identity", fill="#0072bc", colour="#3f3f3f",  alpha=2/3) + 
+p.indskills <- ggplot(data=data, aes(x=var, y=freq)) +
+  geom_bar(stat="identity", fill="#0072bc", colour="#3f3f3f",  alpha=2/3) +
   scale_x_discrete(labels = function(x) str_wrap(x, width = 35))+
   theme_plot() +
   theme(panel.grid.major.x = element_line(color = "gray10", size = 0.2),
@@ -926,15 +927,15 @@ df.indtalents <- data.commwork[,89:99]
 colnames(df.indtalents) <- c("Storytelling", "Literature writing", "Dancing", "Singing", "Athlete/sport playing",
                              "Innovation", "Acting", "Artisan", "Music playing/composing", "Commedian",
                              "Drawing/painting")
-data <- reshape(df.indtalents, 
+data <- reshape(df.indtalents,
                 varying = c("Storytelling", "Literature writing", "Dancing", "Singing", "Athlete/sport playing",
                             "Innovation", "Acting", "Artisan", "Music playing/composing", "Commedian",
-                            "Drawing/painting"), 
+                            "Drawing/painting"),
                 v.names = "freq",
-                timevar = "var", 
+                timevar = "var",
                 times = c("Storytelling", "Literature writing", "Dancing", "Singing", "Athlete/sport playing",
                           "Innovation", "Acting", "Artisan", "Music playing/composing", "Commedian",
-                          "Drawing/painting"), 
+                          "Drawing/painting"),
                 new.row.names = 1:2000,
                 direction = "long")
 data <- data[!is.na(data$freq),]
@@ -942,8 +943,8 @@ data$freq <- as.numeric(data$freq/sum(data$freq))
 rm(df.indtalents)
 #######################################
 ## PLOT individual's talents within the community in percent
-p.indtalents <- ggplot(data=data, aes(x=var, y=freq)) + 
-  geom_bar(stat="identity", fill="#0072bc", colour="#3f3f3f",  alpha=2/3) + 
+p.indtalents <- ggplot(data=data, aes(x=var, y=freq)) +
+  geom_bar(stat="identity", fill="#0072bc", colour="#3f3f3f",  alpha=2/3) +
   scale_x_discrete(labels = function(x) str_wrap(x, width = 35))+
   theme_plot() +
   theme(panel.grid.major.x = element_line(color = "gray10", size = 0.2),
@@ -973,39 +974,39 @@ df.refservices2 <- data.referral[,c(31,35:55)]
 df.refservices3 <- data.referral[,c(59,63:83)]
 colnames(df.refservices1) <- c("Referral to", "Preventative activities", "Resolving inter-community disputes", "Technical/professional advices", "Facilitating access to services",
                                "Facilitating complaints to service provider", "Taking lead or participating in advocacy",
-                               "Community dialogue", "Organizing or participating in community events ", 
+                               "Community dialogue", "Organizing or participating in community events ",
                                "Helping people in need with specific support/action", "Supporting for alternative dispute resolution",
                                "Community building", "Empowering certain segment of community", "Identifying concerns, challenges and solutions",
                                "Facilitating feedback", "Skill and knowledge development support", "Language support",
                                "Taking or supporting community-led initiatives", "Sharing information on availability of and accessibility to the services",
-                               "Identifying persons with specific needs", "Recreational activities", "Awareness activities") 
+                               "Identifying persons with specific needs", "Recreational activities", "Awareness activities")
 colnames(df.refservices2) <- c("Referral to", "Preventative activities", "Resolving inter-community disputes", "Technical/professional advices", "Facilitating access to services",
                                "Facilitating complaints to service provider", "Taking lead or participating in advocacy",
-                               "Community dialogue", "Organizing or participating in community events ", 
+                               "Community dialogue", "Organizing or participating in community events ",
                                "Helping people in need with specific support/action", "Supporting for alternative dispute resolution",
                                "Community building", "Empowering certain segment of community", "Identifying concerns, challenges and solutions",
                                "Facilitating feedback", "Skill and knowledge development support", "Language support",
                                "Taking or supporting community-led initiatives", "Sharing information on availability of and accessibility to the services",
-                               "Identifying persons with specific needs", "Recreational activities", "Awareness activities") 
+                               "Identifying persons with specific needs", "Recreational activities", "Awareness activities")
 colnames(df.refservices3) <- c("Referral to", "Preventative activities", "Resolving inter-community disputes", "Technical/professional advices", "Facilitating access to services",
                                "Facilitating complaints to service provider", "Taking lead or participating in advocacy",
-                               "Community dialogue", "Organizing or participating in community events ", 
+                               "Community dialogue", "Organizing or participating in community events ",
                                "Helping people in need with specific support/action", "Supporting for alternative dispute resolution",
                                "Community building", "Empowering certain segment of community", "Identifying concerns, challenges and solutions",
                                "Facilitating feedback", "Skill and knowledge development support", "Language support",
                                "Taking or supporting community-led initiatives", "Sharing information on availability of and accessibility to the services",
-                               "Identifying persons with specific needs", "Recreational activities", "Awareness activities") 
+                               "Identifying persons with specific needs", "Recreational activities", "Awareness activities")
 df.refservices <- rbind(df.refservices1, df.refservices2, df.refservices3)
 rm(df.refservices1, df.refservices2, df.refservices3)
-   
-                                
-                               
-                                
-                                
-                                
-                                
-                                
-                
+
+
+
+
+
+
+
+
+
 
 rm(data.referral)
 
@@ -1019,21 +1020,21 @@ data.target <- data.process[,248:274]
 df.poc <- data.target[,2:8]
 colnames(df.poc) <- c("Refugees/Asylum seekers", "Anybody who approaches", "Internally displaced persons",
   "People from this area", "People in mixed movements", "Host community members", "Returnees")
-data <- reshape(df.poc, 
+data <- reshape(df.poc,
                 varying = c("Refugees/Asylum seekers", "Anybody who approaches", "Internally displaced persons",
-                            "People from this area", "People in mixed movements", "Host community members", "Returnees"), 
+                            "People from this area", "People in mixed movements", "Host community members", "Returnees"),
                 v.names = "freq",
-                timevar = "var", 
+                timevar = "var",
                 times = c("Refugees/Asylum seekers", "Anybody who approaches", "Internally displaced persons",
-                          "People from this area", "People in mixed movements", "Host community members", "Returnees"), 
+                          "People from this area", "People in mixed movements", "Host community members", "Returnees"),
                 new.row.names = 1:2000,
                 direction = "long")
 data$freq <- as.numeric(data$freq/sum(data$freq))
 rm(df.poc)
 #######################################
 ## PLOT targeted persons in percent
-p.poc <- ggplot(data=data, aes(x=var, y=freq)) + 
-  geom_bar(stat="identity", fill="#0072bc", colour="#3f3f3f",  alpha=2/3) + 
+p.poc <- ggplot(data=data, aes(x=var, y=freq)) +
+  geom_bar(stat="identity", fill="#0072bc", colour="#3f3f3f",  alpha=2/3) +
   scale_x_discrete(labels = function(x) str_wrap(x, width = 35))+
   theme_plot() +
   theme(panel.grid.major.x = element_line(color = "gray10", size = 0.2),
@@ -1053,31 +1054,31 @@ plot(p.poc)
 ## 6.2) Specific groups of concern
 df.specific <- data.target[,10:27]
 colnames(df.specific) <- c("Survivor of gender-based violence", "Socio-economically vulnerable",
-"Persons with disabilities", "LGBTI persons", "Adolescent (10-14)", "Orphans", "Unaccompanied/separated children", 
+"Persons with disabilities", "LGBTI persons", "Adolescent (10-14)", "Orphans", "Unaccompanied/separated children",
 "Minority community members", "People living with mental health and psychosocial problems", "Youth (15-24)",
 "Women and girls", "No focus on a specific group", "Older persons (60 +)", "Marginalized members in the community",
 "Single and house-bound individuals", "Children (< 18)","Unaccompanied older persons", "Female headed households")
-data <- reshape(df.specific, 
+data <- reshape(df.specific,
                 varying = c("Survivor of gender-based violence", "Socio-economically vulnerable",
-                            "Persons with disabilities", "LGBTI persons", "Adolescent (10-14)", "Orphans", "Unaccompanied/separated children", 
+                            "Persons with disabilities", "LGBTI persons", "Adolescent (10-14)", "Orphans", "Unaccompanied/separated children",
                             "Minority community members", "People living with mental health and psychosocial problems", "Youth (15-24)",
                             "Women and girls", "No focus on a specific group", "Older persons (60 +)", "Marginalized members in the community",
-                            "Single and house-bound individuals", "Children (< 18)","Unaccompanied older persons", "Female headed households"), 
+                            "Single and house-bound individuals", "Children (< 18)","Unaccompanied older persons", "Female headed households"),
                 v.names = "freq",
-                timevar = "var", 
+                timevar = "var",
                 times = c("Survivor of gender-based violence", "Socio-economically vulnerable",
-                          "Persons with disabilities", "LGBTI persons", "Adolescent (10-14)", "Orphans", "Unaccompanied/separated children", 
+                          "Persons with disabilities", "LGBTI persons", "Adolescent (10-14)", "Orphans", "Unaccompanied/separated children",
                           "Minority community members", "People living with mental health and psychosocial problems", "Youth (15-24)",
                           "Women and girls", "No focus on a specific group", "Older persons (60 +)", "Marginalized members in the community",
-                          "Single and house-bound individuals", "Children (< 18)","Unaccompanied older persons", "Female headed households"), 
+                          "Single and house-bound individuals", "Children (< 18)","Unaccompanied older persons", "Female headed households"),
                 new.row.names = 1:2000,
                 direction = "long")
 data$freq <- as.numeric(data$freq/sum(data$freq))
 rm(df.specific)
 #######################################
 ## PLOT specific groups in percent
-p.specific <- ggplot(data=data, aes(x=var, y=freq)) + 
-  geom_bar(stat="identity", fill="#0072bc", colour="#3f3f3f",  alpha=2/3) + 
+p.specific <- ggplot(data=data, aes(x=var, y=freq)) +
+  geom_bar(stat="identity", fill="#0072bc", colour="#3f3f3f",  alpha=2/3) +
   scale_x_discrete(labels = function(x) str_wrap(x, width = 35))+
   theme_plot() +
   theme(panel.grid.major.x = element_line(color = "gray10", size = 0.2),
@@ -1105,19 +1106,19 @@ data.activememb <- data.process[,275:285]
 df.actmembers <- data.activememb[,2:10]
 colnames(df.actmembers) <- c("Professionals", "Network members", "Recognized and knowledgeable community members",
                            "Skilled group of people from outside the community", "Collaborating agency or authority",
-                           "Dedicated staff", "Influential community leaders and members", 
+                           "Dedicated staff", "Influential community leaders and members",
                            "Community volunteers", "Skilled community members")
-data <- reshape(df.actmembers, 
+data <- reshape(df.actmembers,
                 varying = c("Professionals", "Network members", "Recognized and knowledgeable community members",
                             "Skilled group of people from outside the community", "Collaborating agency or authority",
-                            "Dedicated staff", "Influential community leaders and members", 
-                            "Community volunteers", "Skilled community members"), 
+                            "Dedicated staff", "Influential community leaders and members",
+                            "Community volunteers", "Skilled community members"),
                 v.names = "freq",
-                timevar = "var", 
+                timevar = "var",
                 times = c("Professionals", "Network members", "Recognized and knowledgeable community members",
                           "Skilled group of people from outside the community", "Collaborating agency or authority",
-                          "Dedicated staff", "Influential community leaders and members", 
-                          "Community volunteers", "Skilled community members"), 
+                          "Dedicated staff", "Influential community leaders and members",
+                          "Community volunteers", "Skilled community members"),
                 new.row.names = 1:2000,
                 direction = "long")
 data <- data[!is.na(data$freq),]
@@ -1125,8 +1126,8 @@ data$freq <- as.numeric(data$freq/sum(data$freq))
 rm(df.actmembers)
 #######################################
 ## PLOT Type of active community members in percent
-p.actmembers <- ggplot(data=data, aes(x=var, y=freq)) + 
-  geom_bar(stat="identity", fill="#0072bc", colour="#3f3f3f",  alpha=2/3) + 
+p.actmembers <- ggplot(data=data, aes(x=var, y=freq)) +
+  geom_bar(stat="identity", fill="#0072bc", colour="#3f3f3f",  alpha=2/3) +
   scale_x_discrete(labels = function(x) str_wrap(x, width = 35))+
   theme_plot() +
   theme(panel.grid.major.x = element_line(color = "gray10", size = 0.2),
@@ -1155,8 +1156,8 @@ data$freq <- as.numeric(data$freq/sum(data$freq))
 rm(df.duration)
 #######################################
 ## PLOT conduciveness of meeting space in percent
-p.duration <- ggplot(data=data, aes(x=label, y=freq)) + 
-  geom_bar(stat="identity", fill="#0072bc", colour="#3f3f3f",  alpha=2/3) + 
+p.duration <- ggplot(data=data, aes(x=label, y=freq)) +
+  geom_bar(stat="identity", fill="#0072bc", colour="#3f3f3f",  alpha=2/3) +
   scale_x_discrete(labels = function(x) str_wrap(x, width = 35))+
   theme_plot() +
   theme(panel.grid.major.x = element_line(color = "gray10", size = 0.2),
@@ -1189,27 +1190,27 @@ colnames(df.communication) <- c("Through local social network", "Social/Communit
   "Blog", "Phone call", "Facebook", "Local Radio/FM", "Meeting in-person", "Neighborhood/community meeting",
   "Leaflets/broachers/posters", "Drama and community-based event", "Group discussion/meeting",
   "Email")
-data <- reshape(df.communication, 
+data <- reshape(df.communication,
                 varying = c("Through local social network", "Social/Community network",
                             "WhatsApp/SMS/Viber", "Webpage", "e-newspaper", "Home visit", "Organizing events during the special days",
                             "Blog", "Phone call", "Facebook", "Local Radio/FM", "Meeting in-person", "Neighborhood/community meeting",
                             "Leaflets/broachers/posters", "Drama and community-based event", "Group discussion/meeting",
-                            "Email"), 
+                            "Email"),
                 v.names = "freq",
-                timevar = "var", 
+                timevar = "var",
                 times = c("Through local social network", "Social/Community network",
                           "WhatsApp/SMS/Viber", "Webpage", "e-newspaper", "Home visit", "Organizing events during the special days",
                           "Blog", "Phone call", "Facebook", "Local Radio/FM", "Meeting in-person", "Neighborhood/community meeting",
                           "Leaflets/broachers/posters", "Drama and community-based event", "Group discussion/meeting",
-                          "Email"), 
+                          "Email"),
                 new.row.names = 1:2000,
                 direction = "long")
 data$freq <- as.numeric(data$freq/sum(data$freq))
 rm(df.communication)
 #######################################
 ## PLOT specific groups in percent
-p.channels <- ggplot(data=data, aes(x=var, y=freq)) + 
-  geom_bar(stat="identity", fill="#0072bc", colour="#3f3f3f",  alpha=2/3) + 
+p.channels <- ggplot(data=data, aes(x=var, y=freq)) +
+  geom_bar(stat="identity", fill="#0072bc", colour="#3f3f3f",  alpha=2/3) +
   scale_x_discrete(labels = function(x) str_wrap(x, width = 35))+
   theme_plot() +
   theme(panel.grid.major.x = element_line(color = "gray10", size = 0.2),
@@ -1225,10 +1226,10 @@ p.channels <- ggplot(data=data, aes(x=var, y=freq)) +
   ggtitle(label="")+
   coord_flip()
 plot(p.channels)
-  
 
-## 8.2) List of manual entries of specific communication channels  
-df.addresses <- data.channels[,c(1,20:26)]   
+
+## 8.2) List of manual entries of specific communication channels
+df.addresses <- data.channels[,c(1,20:26)]
 colnames(df.addresses) <- c("Community name", "Webpage", "Facebook", "Blog", "Email", "Whatsapp/SMS/Vibor", "Local Radio/FM", "E-Newspaper")
 mytheme <- gridExtra::ttheme_default(
   core = list(fg_params=list(cex = 0.8)),
@@ -1236,8 +1237,8 @@ mytheme <- gridExtra::ttheme_default(
   rowhead = list(fg_params=list(cex = 0.8)))
 p.addresses <- tableGrob(df.addresses, theme=mytheme)
 plot(p.addresses)
-rm(df.addresses)  
-  
+rm(df.addresses)
+
 
 rm(data.channels)
 ############################################################################################
@@ -1250,15 +1251,15 @@ df.meetingspace <- data.space[,2:13]
 colnames(df.meetingspace) <- c("School or educational institution", "No specific place", "Office of the local authority/municipality",
              "Youth Club", "Park or open space", "Public Place/Building", "Community Event Space", "Sport Club",
              "Community Center", "Office of a private entity", "Office of the Community", "Religious Place")
-data <- reshape(df.meetingspace, 
+data <- reshape(df.meetingspace,
                 varying = c("School or educational institution", "No specific place", "Office of the local authority/municipality",
                             "Youth Club", "Park or open space", "Public Place/Building", "Community Event Space", "Sport Club",
-                            "Community Center", "Office of a private entity", "Office of the Community", "Religious Place"), 
+                            "Community Center", "Office of a private entity", "Office of the Community", "Religious Place"),
                 v.names = "freq",
-                timevar = "var", 
+                timevar = "var",
                 times = c("School or educational institution", "No specific place", "Office of the local authority/municipality",
                           "Youth Club", "Park or open space", "Public Place/Building", "Community Event Space", "Sport Club",
-                          "Community Center", "Office of a private entity", "Office of the Community", "Religious Place"), 
+                          "Community Center", "Office of a private entity", "Office of the Community", "Religious Place"),
                 new.row.names = 1:2000,
                 direction = "long")
 data <- data[!is.na(data$freq),]
@@ -1266,8 +1267,8 @@ data$freq <- as.numeric(data$freq/sum(data$freq))
 rm(df.meetingspace)
 #######################################
 ## PLOT type of meeting space in percent
-p.meetingspace <- ggplot(data=data, aes(x=var, y=freq)) + 
-  geom_bar(stat="identity", fill="#0072bc", colour="#3f3f3f",  alpha=2/3) + 
+p.meetingspace <- ggplot(data=data, aes(x=var, y=freq)) +
+  geom_bar(stat="identity", fill="#0072bc", colour="#3f3f3f",  alpha=2/3) +
   scale_x_discrete(labels = function(x) str_wrap(x, width = 35))+
   theme_plot() +
   theme(panel.grid.major.x = element_line(color = "gray10", size = 0.2),
@@ -1288,13 +1289,13 @@ plot(p.meetingspace)
 df.access <- data.space[,15:21]
 colnames(df.access) <- c("On ad-hoc basis", "Own space", "Rental basis", "Freely available",
                          "Randomly used", "Public space", "On pre-agreement basis")
-data <- reshape(df.access, 
+data <- reshape(df.access,
                 varying = c("On ad-hoc basis", "Own space", "Rental basis", "Freely available",
-                            "Randomly used", "Public space", "On pre-agreement basis"), 
+                            "Randomly used", "Public space", "On pre-agreement basis"),
                 v.names = "freq",
-                timevar = "var", 
+                timevar = "var",
                 times = c("On ad-hoc basis", "Own space", "Rental basis", "Freely available",
-                          "Randomly used", "Public space", "On pre-agreement basis"), 
+                          "Randomly used", "Public space", "On pre-agreement basis"),
                 new.row.names = 1:2000,
                 direction = "long")
 data <- data[!is.na(data$freq),]
@@ -1302,8 +1303,8 @@ data$freq <- as.numeric(data$freq/sum(data$freq))
 rm(df.access)
 #######################################
 ## PLOT type access in percent
-p.access <- ggplot(data=data, aes(x=var, y=freq)) + 
-  geom_bar(stat="identity", fill="#0072bc", colour="#3f3f3f",  alpha=2/3) + 
+p.access <- ggplot(data=data, aes(x=var, y=freq)) +
+  geom_bar(stat="identity", fill="#0072bc", colour="#3f3f3f",  alpha=2/3) +
   scale_x_discrete(labels = function(x) str_wrap(x, width = 35))+
   theme_plot() +
   theme(panel.grid.major.x = element_line(color = "gray10", size = 0.2),
@@ -1332,8 +1333,8 @@ data$freq <- as.numeric(data$freq/sum(data$freq))
 rm(df.conduciveness)
 #######################################
 ## PLOT conduciveness of meeting space in percent
-p.conduciveness <- ggplot(data=data, aes(x=label, y=freq)) + 
-  geom_bar(stat="identity", fill="#0072bc", colour="#3f3f3f",  alpha=2/3) + 
+p.conduciveness <- ggplot(data=data, aes(x=label, y=freq)) +
+  geom_bar(stat="identity", fill="#0072bc", colour="#3f3f3f",  alpha=2/3) +
   scale_x_discrete(labels = function(x) str_wrap(x, width = 35))+
   theme_plot() +
   theme(panel.grid.major.x = element_line(color = "gray10", size = 0.2),
@@ -1358,26 +1359,26 @@ rm(data.space)
 data.challenges <- data.process[,333:339]
 
 df.challenges <- data.challenges[,2:6]
-colnames(df.challenges) <- c("Having more specific skills to provide more services", "Having better communication channels", 
-  "Having a better network with other communities", "Having more actively engaged community members", 
+colnames(df.challenges) <- c("Having more specific skills to provide more services", "Having better communication channels",
+  "Having a better network with other communities", "Having more actively engaged community members",
   "Having better or more community space")
-data <- reshape(df.challenges, 
-                varying = c("Having more specific skills to provide more services", "Having better communication channels", 
-                            "Having a better network with other communities", "Having more actively engaged community members", 
-                            "Having better or more community space"), 
+data <- reshape(df.challenges,
+                varying = c("Having more specific skills to provide more services", "Having better communication channels",
+                            "Having a better network with other communities", "Having more actively engaged community members",
+                            "Having better or more community space"),
                 v.names = "freq",
-                timevar = "var", 
-                times = c("Having more specific skills to provide more services", "Having better communication channels", 
-                          "Having a better network with other communities", "Having more actively engaged community members", 
-                          "Having better or more community space"), 
+                timevar = "var",
+                times = c("Having more specific skills to provide more services", "Having better communication channels",
+                          "Having a better network with other communities", "Having more actively engaged community members",
+                          "Having better or more community space"),
                 new.row.names = 1:2000,
                 direction = "long")
 data$freq <- as.numeric(data$freq/sum(data$freq))
 rm(df.challenges)
 #######################################
 ## PLOT community challenges in percent
-p.challenges <- ggplot(data=data, aes(x=var, y=freq)) + 
-  geom_bar(stat="identity", fill="#0072bc", colour="#3f3f3f",  alpha=2/3) + 
+p.challenges <- ggplot(data=data, aes(x=var, y=freq)) +
+  geom_bar(stat="identity", fill="#0072bc", colour="#3f3f3f",  alpha=2/3) +
   scale_x_discrete(labels = function(x) str_wrap(x, width = 35))+
   theme_plot() +
   theme(panel.grid.major.x = element_line(color = "gray10", size = 0.2),
@@ -1392,8 +1393,8 @@ p.challenges <- ggplot(data=data, aes(x=var, y=freq)) +
   xlab("") + ylab("") +
   ggtitle(label="")+
   coord_flip()
-plot(p.challenges)  
-  
+plot(p.challenges)
+
 
 rm(data.challenges)
 ############################################################################################
@@ -1403,26 +1404,26 @@ data.collab <- data.process[,340:348]
 
 ## 11.1) Reward to motivate community work
 df.reward <- data.collab[,2:8]
-colnames(df.reward) <- c("Getting access to a forum to share experiences and ideas", 
+colnames(df.reward) <- c("Getting access to a forum to share experiences and ideas",
   "Appreciation through certificate", "Specific support linked to the work", "Providing social recognition",
   "Keeping in the communication loop", "Knowing reasons for volunteering", "Promotion of the good work")
-data <- reshape(df.reward, 
-                varying = c("Getting access to a forum to share experiences and ideas", 
+data <- reshape(df.reward,
+                varying = c("Getting access to a forum to share experiences and ideas",
                            "Appreciation through certificate", "Specific support linked to the work", "Providing social recognition",
-                           "Keeping in the communication loop", "Knowing reasons for volunteering", "Promotion of the good work"), 
+                           "Keeping in the communication loop", "Knowing reasons for volunteering", "Promotion of the good work"),
                 v.names = "freq",
-                timevar = "var", 
-                times = c("Getting access to a forum to share experiences and ideas", 
+                timevar = "var",
+                times = c("Getting access to a forum to share experiences and ideas",
                          "Appreciation through certificate", "Specific support linked to the work", "Providing social recognition",
-                         "Keeping in the communication loop", "Knowing reasons for volunteering", "Promotion of the good work"), 
+                         "Keeping in the communication loop", "Knowing reasons for volunteering", "Promotion of the good work"),
                 new.row.names = 1:2000,
                 direction = "long")
 data$freq <- as.numeric(data$freq/sum(data$freq))
 rm(df.reward)
 #######################################
 ## PLOT community challenges in percent
-p.reward <- ggplot(data=data, aes(x=var, y=freq)) + 
-  geom_bar(stat="identity", fill="#0072bc", colour="#3f3f3f",  alpha=2/3) + 
+p.reward <- ggplot(data=data, aes(x=var, y=freq)) +
+  geom_bar(stat="identity", fill="#0072bc", colour="#3f3f3f",  alpha=2/3) +
   scale_x_discrete(labels = function(x) str_wrap(x, width = 35))+
   theme_plot() +
   theme(panel.grid.major.x = element_line(color = "gray10", size = 0.2),
@@ -1437,7 +1438,7 @@ p.reward <- ggplot(data=data, aes(x=var, y=freq)) +
   xlab("") + ylab("") +
   ggtitle(label="")+
   coord_flip()
-plot(p.challenges) 
+plot(p.challenges)
 
 
 
@@ -1451,8 +1452,8 @@ rm(df.collabunhcr)
 rm(data.collab)
 #######################################
 ## PLOT conduciveness of meeting space in percent
-p.collabunhcr <- ggplot(data=data, aes(x=name, y=freq)) + 
-  geom_bar(stat="identity", fill="#0072bc", colour="#3f3f3f",  alpha=2/3) + 
+p.collabunhcr <- ggplot(data=data, aes(x=name, y=freq)) +
+  geom_bar(stat="identity", fill="#0072bc", colour="#3f3f3f",  alpha=2/3) +
   scale_x_discrete(labels = function(x) str_wrap(x, width = 35))+
   theme_plot() +
   theme(panel.grid.major.x = element_line(color = "gray10", size = 0.2),
@@ -1482,7 +1483,7 @@ mytheme <- gridExtra::ttheme_default(
   rowhead = list(fg_params=list(cex = 0.8)))
 p.contact <- tableGrob(df.contact, theme=mytheme)
 plot(p.contact)
-rm(df.contact)  
+rm(df.contact)
 
 rm(data.contact)
 

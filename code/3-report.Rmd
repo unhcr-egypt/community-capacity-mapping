@@ -1,20 +1,38 @@
 ---
-title: "Community assets and capacity mapping"
-author: "Elena Seydel"
-date: "18 April 2017"
+title: "Community assets and capacity mapping."
+author: "Prepared by UNHCR Egypt"
+date: "Cairo, generated on the `r format(Sys.Date(),  '%d %B %Y')`"
 output:
   word_document:
-    toc: TRUE
-  classoption: landscape
-  fig_width: 15
-  fig_height: 8
+    fig_caption: yes
+    fig_height: 8
+    fig_width: 15
+    toc: yes
+    toc_depth: 2
+    reference_docx: style-unhcr-portrait.docx
 ---
 
 <!-- To run in console -->
 <!-- install.packages("rmarkdown", repos="http://cran.us.r-project.org") -->
 <!-- library(rmarkdown) -->
 <!-- rmarkdown::render('code/3-report.Rmd')  -->
+```{r setup, include=FALSE, echo=FALSE, warning=FALSE, message=FALSE}
+mainDir <- getwd()
+mainDirroot <- substring(mainDir, 0 , nchar(mainDir)- 5)
+## Load all required packages
+source(paste0(mainDirroot,"/code/0-theme.R"))
+source(paste0(mainDirroot,"/code/0-packages.R"))
+library(koboloadeR)
+## Provide below the name of the form in xsl form - format should be xls not xlsx
+form <- "form.xls"
+dico <- read.csv(paste0(mainDirroot,"/data/dico_",form,".csv"), encoding="UTF-8", na.strings="")
+data.or <- read.csv(paste0(mainDirroot,"/data/data.csv"), encoding="UTF-8", na.strings="NA")
 
+## label Variables
+data <- kobo_label(data.or , dico)
+
+
+```
 
 #  1) Data load
 

@@ -2,9 +2,7 @@
 
 
 ### Load the data
-household <- read.csv("data/household.csv", encoding="UTF-8", na.strings="NA")
-#case_number_details <- read.csv("data/case_number_details.csv", encoding="UTF-8", na.strings="NA")
-#individual_biodata <- read.csv("data/individual_biodata.csv", encoding="UTF-8", na.strings="NA")
+household <- read.csv("data/data2.csv", encoding="UTF-8", na.strings="NA")
 
 ## Load the form
 
@@ -33,6 +31,15 @@ cat("\n\n Building now the chapters of the reports in Rmd  format \n")
 
 chapters <- as.data.frame(unique(dico$chapter))
 names(chapters)[1] <- "Chapter"
+
+## Default behavior if no chapter was defined
+if((nrow(chapters)==1) & is.na(chapters$Chapter) ){
+  cat("Defautling questions allocation to chapter")
+  dico$chapter[ dico$type %in% c("select_one","select_multiple_d")] <- "report"
+  chapters <- as.data.frame(unique(dico$chapter))
+  names(chapters)[1] <- "Chapter"
+  } else { }
+
 chapters <- as.data.frame(chapters[!is.na(chapters$Chapter), ])
 
 names(chapters)[1] <- "Chapter"
@@ -40,18 +47,20 @@ names(chapters)[1] <- "Chapter"
 disaggregation <- dico[which(dico$disaggregation %in% c("facet","correlate")& dico$formpart=="questions"),
                        c("chapter", "name", "label", "type", "qrepeatlabel", "fullname","disaggregation") ]
 
+## Reinput name of root data frame
 ## for each chapter: create a Rmd file
 
 ##Loop.chapter####################################################################################################
 
 for(i in 1:nrow(chapters))
 {
-  # i <-3
+  # i <-1
   chaptersname <- as.character(chapters[ i , 1])
   cat(paste(i, " - Render chapter for ",as.character(chapters[ i , 1]),"\n" ))
-  chapter.name <- paste("code/report/",i,"-", chaptersname, "-chapter.Rmd", sep="")
+  chapter.name <- paste("code/",i,"-", chaptersname, "-chapter.Rmd", sep="")
 
-  ## Get the
+  ## TO DO : CHECK IF FILE EXIST - AND REQUEST USER TO DELETE BEFORE REGENERATING - SUGGESTING TO SAVE PREVIOUS UNDER NEW NAME
+  if (file.exists(chapter.name)) file.remove(chapter.name)
 
   cat("---", file=chapter.name , sep="\n", append=TRUE)
   cat(paste("title: \"Preliminary exploration of results for Chapter: ",chaptersname , "- Draft not for distribution. \"", sep=""), file=chapter.name ,sep="\n", append=TRUE)
@@ -73,7 +82,7 @@ for(i in 1:nrow(chapters))
 
   cat("```{r setup, include=FALSE, echo=FALSE, warning=FALSE, message=FALSE}", file=chapter.name , sep="\n", append=TRUE)
   cat("mainDir <- getwd()", file=chapter.name , sep="\n", append=TRUE)
-  cat("mainDirroot <- substring(mainDir, 0 , nchar(mainDir)- 12)", file=chapter.name , sep="\n", append=TRUE)
+  cat("mainDirroot <- substring(mainDir, 0 , nchar(mainDir)- 5)", file=chapter.name , sep="\n", append=TRUE)
   cat("## Load all required packages", file=chapter.name , sep="\n", append=TRUE)
   cat("source(paste0(mainDirroot,\"/code/0-packages.R\"))", file=chapter.name , sep="\n", append=TRUE)
   cat("library(koboloadeR)", file=chapter.name , sep="\n", append=TRUE)
@@ -81,21 +90,17 @@ for(i in 1:nrow(chapters))
   cat("form <- \"form.xls\"", file=chapter.name , sep="\n", append=TRUE)
   cat("dico <- read.csv(paste0(mainDirroot,\"/data/dico_\",form,\".csv\"), encoding=\"UTF-8\", na.strings=\"\")", file=chapter.name , sep="\n", append=TRUE)
 
-  cat("household <- read.csv(paste0(mainDirroot,\"/data/household.csv\"), encoding=\"UTF-8\", na.strings=\"NA\")", file=chapter.name , sep="\n", append=TRUE)
-#  cat("case_number_details <- read.csv(paste0(mainDirroot,\"/data/case_number_details.csv\"), encoding=\"UTF-8\", na.strings=\"NA\")", file=chapter.name , sep="\n", append=TRUE)
-#  cat("individual_biodata <- read.csv(paste0(mainDirroot,\"/data/individual_biodata.csv\"), encoding=\"UTF-8\", na.strings=\"NA\")", file=chapter.name , sep="\n", append=TRUE)
+  cat("household <- read.csv(paste0(mainDirroot,\"/data/data2.csv\"), encoding=\"UTF-8\", na.strings=\"NA\")", file=chapter.name , sep="\n", append=TRUE)
 
   cat("## label Variables", file=chapter.name , sep="\n", append=TRUE)
   cat("household <- kobo_label(household , dico)", file=chapter.name , sep="\n", append=TRUE)
-#  cat("case_number_details <- kobo_label(case_number_details , dico)", file=chapter.name , sep="\n", append=TRUE)
-#  cat("individual_biodata <- kobo_label(individual_biodata , dico)", file=chapter.name , sep="\n", append=TRUE)
 
   cat("## Create weighted survey object", file=chapter.name , sep="\n", append=TRUE)
-  cat("household.survey <- svydesign(ids = ~ section1.location.district ,  data = household,  weights = ~Normalized.Weight ,  fpc = ~fpc )", file=chapter.name , sep="\n", append=TRUE)
-#  cat("case_number_details.survey <- svydesign(ids = ~ section1.location.district ,  data = case_number_details ,  weights = ~Normalized.Weight ,  fpc = ~fpc )", file=chapter.name , sep="\n", append=TRUE)
-#  cat("individual_biodata.survey <- svydesign(ids = ~ section1.location.district ,  data = individual_biodata ,  weights = ~Normalized.Weight ,  fpc = ~fpc )", file=chapter.name , sep="\n", append=TRUE)
+  #cat("data.survey <- svydesign(ids = ~ section1.location.district ,  data = data,  weights = ~Normalized.Weight ,  fpc = ~fpc )", file=chapter.name , sep="\n", append=TRUE)
+  ## If no weight, the weighted object is unweigthted
+  cat("household.survey <- svydesign(ids = ~ 1 ,  data = household )", file=chapter.name , sep="\n", append=TRUE)
 
-  cat(paste0("\n```\n", sep = '\n'), file=chapter.name, append=TRUE)
+   cat(paste0("\n```\n", sep = '\n'), file=chapter.name, append=TRUE)
 
 
   chapterquestions <- dico[which(dico$chapter== chaptersname & dico$formpart=="questions"),
@@ -214,7 +219,10 @@ for(i in 1:nrow(chapters))
       if (nrow(frequ) %in% c("0","1")){
         cat(paste0("cat(\"No responses recorded for this question...\")"),file=chapter.name , sep="\n", append=TRUE)
         cat("No responses recorded for this question...\n")
-      } else{
+      } else if(nrow(disaggregation)==0) {
+        cat(paste0("cat(\"No disaggregation requested for this question...\")"),file=chapter.name , sep="\n", append=TRUE)
+        cat("No  disaggregation requested for this question...\n")
+      } else {
         for(h in 1:nrow(disaggregation))
         {
           #h <-1
@@ -447,7 +455,7 @@ for(i in 1:nrow(chapters))
   cat(paste("# Indicators from data analysis plan"),file=chapter.name ,sep="\n", append=TRUE)
 
   # Write the reference to the chapter in the main report file
-  #cat(paste0("\n```{r child = '",i,"-", as.character(chapters[ i , 1]), "-chapter.Rmd", "'}\n```\n"), sep = '\n',file="code/report/report-tabulation.Rmd",append=TRUE)
+  #cat(paste0("\n```{r child = '",i,"-", as.character(chapters[ i , 1]), "-chapter.Rmd", "'}\n```\n"), sep = '\n',file="code/report-tabulation.Rmd",append=TRUE)
   # End chapter
 }
 
@@ -466,7 +474,7 @@ cat(" Render now reports... \n")
 for(i in 1:nrow(chapters)) {
   chaptersname <- as.character(chapters[ i , 1])
   cat(paste(i, " - Render word output report for ",chaptersname))
-  render(paste0("code/report/",i,"-", chaptersname, "-chapter.Rmd", sep="")) }
+  render(paste0("code/",i,"-", chaptersname, "-chapter.Rmd", sep="")) }
 
 #rmarkdown::render('report-tabulation.Rmd')
 

@@ -1,6 +1,52 @@
+##### UNHCR Data Viz style for R
+
+
+#
+#                    `:+o. oo:.
+#                  `/ooo+` /ooo+.                 `
+#                `/oooo/`   -oooo+.
+#              .+oooo/`       :osoo+-`
+#           `:osoo+-     ```    ./oooo/`
+#         `/oooo:..`   -ooso+    .`-+ooo+.
+#       ./ooo+. .oo/   oooooo.  -so: `/ooo+-
+#     `/oooo/  .ooo:   :oooo/   .oos:  -oooo+.
+#    -ooooo/   +ooo`    :oo+     +ooo`  -soooo/
+#   `ooooos-  :soo-  `:+oooo+-`  `ooo+  `soooos-
+#   .oooooo/.:ooo/  -oooooooooo-  .soo+.-sooooo:
+#   .oooooooooooo`  /oooooooooo/   /oooosoooooo:
+#   .oooooooooos:   /oooooooooo+   .oooooooooos-
+#   `ooooooooooo`   /oooooooooo+    +ooooooooos-
+#    oooooooooo:    /oooooooooo+    .ooooooooos.
+#    ooooooooo+     /oooooooooo+     :oooooooos.
+#    +ooooooo+`     /oooooooooo+      /oooooooo`
+#    /ooooooo.      /oooooooooo+       oooooooo
+#    :soooooo       /oooooooooo+       /oooooo+
+#    .soooooo       :soooooooos/       /oooooo:
+#    `ooooooo        ``/oooos.`        /ooooos-
+#     +oooooo          /oooos          /ooooos`
+#     +oooooo          /oooos          /oooooo`
+#     `.----.          -:::::          `-----.
+#
+
+
+## This comes otgether with 2 word template one in portrait and one in landscape
+
+# install.packages("extrafont")
+
+library("extrafont")
+
+# Import system fonts - may take a while, so DO NOT run this during the workshop.
+# font_import()
+fonts() # See what font families are available to you now.
+
+## We have here the lato font family that will be used for the rest of the theme
+#" "Lato"  ,      "Lato Black",
+#  "Lato Heavy",  "Lato Medium", "Lato Semibold",
+#  "Lato Light",  "Lato Thin",   "Lato Hairline",
+
 #=========================================
 # CREATE THEMES
-# We'll create two themes:
+# We'll createa few themes:
 #
 # 1. theme.porttheme
 #    - this will be a general theme that
@@ -10,9 +56,14 @@
 # 2. theme.smallmult
 #    - we'll apply this exclusively to
 #      "small multiple" charts
-#      (AKA, trellis charts).  We need this
+#      (AKA, trellis charts, facet).  We need this
 #      because the axis text needs to be
 #      smaller for the small multiples
+#
+# 3. theme.map
+#    - we'll apply this exclusively to
+#      maps.  We need this
+#      for a cleaner design
 #=========================================
 
 
@@ -23,7 +74,7 @@
 #----------------------------------------
 
 theme.porttheme <-
-  theme(text = element_text(family = "Gill Sans", color = "#444444")) +
+  theme(text = element_text(family = "Lato", color = "#444444")) +
   theme(plot.title = element_text(size = 24)) +
   theme(plot.subtitle = element_text(size = 18)) +
   theme(axis.title = element_text(size = 14)) +

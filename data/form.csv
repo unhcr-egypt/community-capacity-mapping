@@ -1,1 +1,727 @@
-﻿list_name,name,label,country,service,workarea,,,,,,,adm0,SYR,Syrian Arab Republic,,,,,,,,,,adm0,IRQ,Iraq,,,,,,,,,,adm0,JOR,Jordan,,,,,,,,,,adm0,LBN,Lebanon,,,,,,,,,,adm0,TUR,Turkey,,,,,,,,,,adm0,IRN,Iran,,,,,,,,,,adm0,ISR,Israel,,,,,,,,,,adm0,PSE,State of Palestine,,,,,,,,,,adm0,BAH,Bahrein,,,,,,,,,,adm0,OMN,Oman,,,,,,,,,,adm0,UAE,United Arab Emirates,,,,,,,,,,adm0,SAU,Saudi Arabia,,,,,,,,,,adm0,KWT,Kuweit,,,,,,,,,,adm0,QAT,Qatar,,,,,,,,,,adm0,YEM,Yemen,,,,,,,,,,adm0,MRT,Mauritania,,,,,,,,,,adm0,ESH,Western Sahara,,,,,,,,,,adm0,MAR,Marocco,,,,,,,,,,adm0,DZA,Algeria,,,,,,,,,,adm0,TUN,Tunisia,,,,,,,,,,adm0,LBY,Libya,,,,,,,,,,adm0,EGY,Egypt,,,,,,,,,,adm1,ARE001,Cairo,,,,,,,,,,adm1,ARE002,Alexandria,EGY,,,,,,,,,adm1,ARE003,Port-said,EGY,,,,,,,,,adm1,ARE004,Suez,EGY,,,,,,,,,adm1,ARE006,6th October,EGY,,,,,,,,,adm1,ARE011,Damietta,EGY,,,,,,,,,adm1,ARE012,Dakahliya,EGY,,,,,,,,,adm1,ARE013,Sharkia,EGY,,,,,,,,,adm1,ARE014,Qalyubia,EGY,,,,,,,,,adm1,ARE015,Kafr El Shiekh,EGY,,,,,,,,,adm1,ARE016,Gharbeya,EGY,,,,,,,,,adm1,ARE017,Monofiya,EGY,,,,,,,,,adm1,ARE018,El-beheira,EGY,,,,,,,,,adm1,ARE019,Ismailia,EGY,,,,,,,,,adm1,ARE021,Giza,EGY,,,,,,,,,adm1,ARE022,Bani Souwaif,EGY,,,,,,,,,adm1,ARE023,Fayoum,EGY,,,,,,,,,adm1,ARE024,Menia,EGY,,,,,,,,,adm1,ARE025,Assiut,EGY,,,,,,,,,adm1,ARE026,Sohag,EGY,,,,,,,,,adm1,ARE027,Qena,EGY,,,,,,,,,adm1,ARE028,Aswan,EGY,,,,,,,,,adm1,ARE029,Luxor,EGY,,,,,,,,,adm1,ARE031,The Red Sea,EGY,,,,,,,,,adm1,ARE032,New Valley,EGY,,,,,,,,,adm1,ARE033,Matrouh,EGY,,,,,,,,,adm1,ARE034,North Sinai,EGY,,,,,,,,,adm1,ARE035,South Sinai,EGY,,,,,,,,,adm1,IRQ01,Anbar,IRQ,,,,,,,,,adm1,IRQ15,Ninewa,IRQ,,,,,,,,,adm1,IRQ02,Basrah,IRQ,,,,,,,,,adm1,IRQ14,Missan,IRQ,,,,,,,,,adm1,IRQ03,Muthanna,IRQ,,,,,,,,,adm1,IRQ08,Dahuk,IRQ,,,,,,,,,adm1,IRQ11,Erbil,IRQ,,,,,,,,,adm1,IRQ10,Diyala,IRQ,,,,,,,,,adm1,IRQ16,Wassit,IRQ,,,,,,,,,adm1,IRQ17,Najaf,IRQ,,,,,,,,,adm1,IRQ05,Sulaymaniyah,IRQ,,,,,,,,,adm1,IRQ06,Babil,IRQ,,,,,,,,,adm1,IRQ07,Baghdad,IRQ,,,,,,,,,adm1,IRQ12,Kerbala,IRQ,,,,,,,,,adm1,IRQ18,Salah al-Din,IRQ,,,,,,,,,adm1,IRQ04,Qadissiya,IRQ,,,,,,,,,adm1,IRQ09,Thi-Qar,IRQ,,,,,,,,,adm1,IRQ13,Kirkuk,IRQ,,,,,,,,,adm1,TUR001,Adana,TUR,,,,,,,,,adm1,TUR002,Adiyaman,TUR,,,,,,,,,adm1,TUR003,Afyon,TUR,,,,,,,,,adm1,TUR004,AÃ„Å¸rÃ„Â±,TUR,,,,,,,,,adm1,TUR005,Aksaray,TUR,,,,,,,,,adm1,TUR006,Amasya,TUR,,,,,,,,,adm1,TUR007,Ankara,TUR,,,,,,,,,adm1,TUR008,Antalya,TUR,,,,,,,,,adm1,TUR009,Ardahan,TUR,,,,,,,,,adm1,TUR010,Artvin,TUR,,,,,,,,,adm1,TUR011,Aydin,TUR,,,,,,,,,adm1,TUR012,Balikesir,TUR,,,,,,,,,adm1,TUR013,Bartin,TUR,,,,,,,,,adm1,TUR014,Batman,TUR,,,,,,,,,adm1,TUR015,Bayburt,TUR,,,,,,,,,adm1,TUR016,Bilecik,TUR,,,,,,,,,adm1,TUR017,BingÃƒÂ¶l,TUR,,,,,,,,,adm1,TUR018,Bitlis,TUR,,,,,,,,,adm1,TUR019,Bolu,TUR,,,,,,,,,adm1,TUR020,Burdur,TUR,,,,,,,,,adm1,TUR021,Bursa,TUR,,,,,,,,,adm1,TUR022,Ãƒâ€¡anakkale,TUR,,,,,,,,,adm1,TUR023,Cankiri,TUR,,,,,,,,,adm1,TUR024,Ãƒâ€¡orum,TUR,,,,,,,,,adm1,TUR025,Denizli,TUR,,,,,,,,,adm1,TUR026,Diyarbakir,TUR,,,,,,,,,adm1,TUR027,Edirne,TUR,,,,,,,,,adm1,TUR028,ElÃƒÂ¢zÃ„Â±Ã„Å¸,TUR,,,,,,,,,adm1,TUR029,Erzincan,TUR,,,,,,,,,adm1,TUR030,Erzurum,TUR,,,,,,,,,adm1,TUR031,EskiÃ…Å¸ehir,TUR,,,,,,,,,adm1,TUR032,Gaziantep,TUR,,,,,,,,,adm1,TUR033,Giresun,TUR,,,,,,,,,adm1,TUR034,GÃƒÂ¼mÃƒÂ¼Ã…Å¸hane,TUR,,,,,,,,,adm1,TUR035,HakkÃƒÂ¢ri,TUR,,,,,,,,,adm1,TUR036,Hatay,TUR,,,,,,,,,adm1,TUR037,Mersin,TUR,,,,,,,,,adm1,TUR038,IÃ„Å¸dÃ„Â±r,TUR,,,,,,,,,adm1,TUR039,Isparta,TUR,,,,,,,,,adm1,TUR040,Istanbul,TUR,,,,,,,,,adm1,TUR041,Izmir,TUR,,,,,,,,,adm1,TUR042,KahramanmaraÃ…Å¸,TUR,,,,,,,,,adm1,TUR043,KarabÃƒÂ¼k,TUR,,,,,,,,,adm1,TUR044,Karaman,TUR,,,,,,,,,adm1,TUR045,Kars,TUR,,,,,,,,,adm1,TUR046,Kastamonu,TUR,,,,,,,,,adm1,TUR047,Kayseri,TUR,,,,,,,,,adm1,TUR048,Kilis,TUR,,,,,,,,,adm1,TUR049,Kirikkale,TUR,,,,,,,,,adm1,TUR050,Kirklareli,TUR,,,,,,,,,adm1,TUR051,KÃ„Â±rÃ…Å¸ehir,TUR,,,,,,,,,adm1,TUR052,Kocaeli,TUR,,,,,,,,,adm1,TUR053,Konya,TUR,,,,,,,,,adm1,TUR054,KÃƒÂ¼tahya,TUR,,,,,,,,,adm1,TUR055,Malatya,TUR,,,,,,,,,adm1,TUR056,Manisa,TUR,,,,,,,,,adm1,TUR057,Mardin,TUR,,,,,,,,,adm1,TUR058,MuÃ„Å¸la,TUR,,,,,,,,,adm1,TUR059,Mus,TUR,,,,,,,,,adm1,TUR060,NevÃ…Å¸ehir,TUR,,,,,,,,,adm1,TUR061,NiÃ„Å¸de,TUR,,,,,,,,,adm1,TUR062,Ordu,TUR,,,,,,,,,adm1,TUR063,Osmaniye,TUR,,,,,,,,,adm1,TUR064,Rize,TUR,,,,,,,,,adm1,TUR065,Sakarya,TUR,,,,,,,,,adm1,TUR066,Samsun,TUR,,,,,,,,,adm1,TUR067,Ã…Å¾anlÃ„Â±urfa,TUR,,,,,,,,,adm1,TUR068,Siirt,TUR,,,,,,,,,adm1,TUR069,Sinop,TUR,,,,,,,,,adm1,TUR070,Ã…Å¾Ã„Â±rnak,TUR,,,,,,,,,adm1,TUR071,Sivas,TUR,,,,,,,,,adm1,TUR072,TekirdaÃ„Å¸,TUR,,,,,,,,,adm1,TUR073,Tokat,TUR,,,,,,,,,adm1,TUR074,Trabzon,TUR,,,,,,,,,adm1,TUR075,Tunceli,TUR,,,,,,,,,adm1,TUR076,UÃ…Å¸ak,TUR,,,,,,,,,adm1,TUR077,Van,TUR,,,,,,,,,adm1,TUR078,Yalova,TUR,,,,,,,,,adm1,TUR079,Yozgat,TUR,,,,,,,,,adm1,TUR080,Zonguldak,TUR,,,,,,,,,adm1,TUR081,DÃƒÂ¼zce,TUR,,,,,,,,,adm1,SYR07,Idleb,SYR,,,,,,,,,adm1,SYR08,Al-Hasakeh,SYR,,,,,,,,,adm1,SYR11,Ar-Raqqa,SYR,,,,,,,,,adm1,SYR13,As-Sweida,SYR,,,,,,,,,adm1,SYR14,Quneitra,SYR,,,,,,,,,adm1,SYR06,Lattakia,SYR,,,,,,,,,adm1,SYR02,Aleppo,SYR,,,,,,,,,adm1,SYR05,Hama,SYR,,,,,,,,,adm1,SYR04,Homs,SYR,,,,,,,,,adm1,SYR12,Dar'a,SYR,,,,,,,,,adm1,SYR09,Deir-ez-Zor,SYR,,,,,,,,,adm1,SYR03,Rural Damascus,SYR,,,,,,,,,adm1,SYR10,Tartous,SYR,,,,,,,,,adm1,SYR01,Damascus,SYR,,,,,,,,,adm1,JOR21,Irbid,JOR,,,,,,,,,adm1,JOR24,Ajloun,JOR,,,,,,,,,adm1,JOR12,Al Balqa,JOR,,,,,,,,,adm1,JOR11,Amman,JOR,,,,,,,,,adm1,JOR31,Al Karak,JOR,,,,,,,,,adm1,JOR34,Al Aqaba,JOR,,,,,,,,,adm1,JOR14,Madaba,JOR,,,,,,,,,adm1,JOR13,Zarqa,JOR,,,,,,,,,adm1,JOR32,Al Tafilah,JOR,,,,,,,,,adm1,JOR33,Ma'an,JOR,,,,,,,,,adm1,JOR23,Jarash,JOR,,,,,,,,,adm1,JOR22,Al Mafraq,JOR,,,,,,,,,adm1,LBN05,Akkar,LBN,,,,,,,,,adm1,LBN02,Hermel/Baalbek,LBN,,,,,,,,,adm1,LBN08,North,LBN,,,,,,,,,adm1,LBN03,Mount Lebanon,LBN,,,,,,,,,adm1,LBN07,Bekaa,LBN,,,,,,,,,adm1,LBN01,Beirut,LBN,,,,,,,,,adm1,LBN06,South Lebanon,LBN,,,,,,,,,adm1,LBN04,El Nabatieh,LBN,,,,,,,,,,,,,,,,,,,,,nationality,JOR,Jordan,,,,,,,,,,nationality,IRN,Iran (Islamic Rep. of),,,,,,,,,,nationality,IRQ,Iraq,,,,,,,,,,nationality,ISR,Israel,,,,,,,,,,nationality,SYR,Syrian Arab Rep.,,,,,,,,,,nationality,EGY,Egypt,,,,,,,,,,nationality,AFG,Afghanistan,,,,,,,,,,nationality,PSE,State of Palestine,,,,,,,,,,nationality,TUR,Turkey,,,,,,,,,,nationality,ABW,Aruba,,,,,,,,,,nationality,AIA,Anguilla,,,,,,,,,,nationality,ALB,Albania,,,,,,,,,,nationality,DZA,Algeria,,,,,,,,,,nationality,AND,Andorra,,,,,,,,,,nationality,AGO,Angola,,,,,,,,,,nationality,ATG,Antigua and Barbuda,,,,,,,,,,nationality,ARG,Argentina,,,,,,,,,,nationality,ARM,Armenia,,,,,,,,,,nationality,AUS,Australia,,,,,,,,,,nationality,AUT,Austria,,,,,,,,,,nationality,AZE,Azerbaijan,,,,,,,,,,nationality,BHR,Bahrain,,,,,,,,,,nationality,BRB,Barbados,,,,,,,,,,nationality,BDI,Burundi,,,,,,,,,,nationality,BEL,Belgium,,,,,,,,,,nationality,BEN,Benin,,,,,,,,,,nationality,BMU,Bermuda,,,,,,,,,,nationality,BES,Bonaire, Saint Eustatius and Saba,,,,,,,,,nationality,BGD,Bangladesh,,,,,,,,,,nationality,BHS,Bahamas,,,,,,,,,,nationality,BTN,Bhutan,,,,,,,,,,nationality,BFA,Burkina Faso,,,,,,,,,,nationality,BLR,Belarus,,,,,,,,,,nationality,BOL,Bolivia (Plurinational State of),,,,,,,,,,nationality,BWA,Botswana,,,,,,,,,,nationality,BRA,Brazil,,,,,,,,,,nationality,BRN,Brunei Darussalam,,,,,,,,,,nationality,BIH,Bosnia and Herzegovina,,,,,,,,,,nationality,BGR,Bulgaria,,,,,,,,,,nationality,VGB,British Virgin Islands,,,,,,,,,,nationality,BLZ,Belize,,,,,,,,,,nationality,KHM,Cambodia,,,,,,,,,,nationality,CAN,Canada,,,,,,,,,,nationality,CAF,Central African Rep.,,,,,,,,,,nationality,CYM,Cayman Islands,,,,,,,,,,nationality,TCD,Chad,,,,,,,,,,nationality,CHN,China,,,,,,,,,,nationality,CHL,Chile,,,,,,,,,,nationality,CMR,Cameroon,,,,,,,,,,nationality,COG,Congo, Republic of,,,,,,,,,nationality,COD,Dem. Rep. of the Congo,,,,,,,,,,nationality,COM,Comoros,,,,,,,,,,nationality,COK,Cook Islands,,,,,,,,,,nationality,COL,Colombia,,,,,,,,,,nationality,CRI,Costa Rica,,,,,,,,,,nationality,CUB,Cuba,,,,,,,,,,nationality,CUW,Curaçao,,,,,,,,,,nationality,CPV,Cabo Verde,,,,,,,,,,nationality,CYP,Cyprus,,,,,,,,,,nationality,CZE,Czech Rep.,,,,,,,,,,nationality,DNK,Denmark,,,,,,,,,,nationality,DJI,Djibouti,,,,,,,,,,nationality,DMA,Dominica,,,,,,,,,,nationality,DOM,Dominican Rep.,,,,,,,,,,nationality,ECU,Ecuador,,,,,,,,,,nationality,GNQ,Equatorial Guinea,,,,,,,,,,nationality,ERI,Eritrea,,,,,,,,,,nationality,EST,Estonia,,,,,,,,,,nationality,ETH,Ethiopia,,,,,,,,,,nationality,GUF,French Guiana,,,,,,,,,,nationality,FJI,Fiji,,,,,,,,,,nationality,FIN,Finland,,,,,,,,,,nationality,NCL,New Caledonia,,,,,,,,,,nationality,PYF,French Polynesia,,,,,,,,,,nationality,FRA,France,,,,,,,,,,nationality,FRO,Faeroe Islands,,,,,,,,,,nationality,FSM,Micronesia (Federated States of),,,,,,,,,,nationality,GAB,Gabon,,,,,,,,,,nationality,GMB,Gambia,,,,,,,,,,nationality,GBR,United Kingdom,,,,,,,,,,nationality,GEO,Georgia,,,,,,,,,,nationality,DEU,Germany,,,,,,,,,,nationality,GHA,Ghana,,,,,,,,,,nationality,GIB,Gibraltar,,,,,,,,,,nationality,GLP,Guadeloupe,,,,,,,,,,nationality,GNB,Guinea-Bissau,,,,,,,,,,nationality,GRC,Greece,,,,,,,,,,nationality,GRL,Greenland,,,,,,,,,,nationality,GRD,Grenada,,,,,,,,,,nationality,GTM,Guatemala,,,,,,,,,,nationality,GIN,Guinea,,,,,,,,,,nationality,GUY,Guyana,,,,,,,,,,nationality,HTI,Haiti,,,,,,,,,,nationality,HKG,China, Hong Kong SAR,,,,,,,,,nationality,HND,Honduras,,,,,,,,,,nationality,HRV,Croatia,,,,,,,,,,nationality,HUN,Hungary,,,,,,,,,,nationality,ISL,Iceland,,,,,,,,,,nationality,CIV,Côte d'Ivoire,,,,,,,,,,nationality,IND,India,,,,,,,,,,nationality,IDN,Indonesia,,,,,,,,,,nationality,IRL,Ireland,,,,,,,,,,nationality,ITA,Italy,,,,,,,,,,nationality,JAM,Jamaica,,,,,,,,,,nationality,JPN,Japan,,,,,,,,,,nationality,KAZ,Kazakhstan,,,,,,,,,,nationality,KEN,Kenya,,,,,,,,,,nationality,KGZ,Kyrgyzstan,,,,,,,,,,nationality,KIR,Kiribati,,,,,,,,,,nationality,KOR,Rep. of Korea,,,,,,,,,,nationality,XKS,Kosovo (SC/RES/1244(1999)),,,,,,,,,,nationality,PRK,Dem. People's Rep. of Korea,,,,,,,,,,nationality,KWT,Kuwait,,,,,,,,,,nationality,LAO,Lao People's Dem. Rep.,,,,,,,,,,nationality,LBR,Liberia,,,,,,,,,,nationality,LBY,Libya,,,,,,,,,,nationality,LCA,Saint Lucia,,,,,,,,,,nationality,LBN,Lebanon,,,,,,,,,,nationality,LSO,Lesotho,,,,,,,,,,nationality,LIE,Liechtenstein,,,,,,,,,,nationality,LKA,Sri Lanka,,,,,,,,,,nationality,LTU,Lithuania,,,,,,,,,,nationality,LUX,Luxembourg,,,,,,,,,,nationality,LVA,Latvia,,,,,,,,,,nationality,MAC,China, Macao SAR,,,,,,,,,nationality,MDG,Madagascar,,,,,,,,,,nationality,MTQ,Martinique,,,,,,,,,,nationality,MRT,Mauritania,,,,,,,,,,nationality,MKD,The former Yugoslav Republic of Macedonia,,,,,,,,,,nationality,MCO,Monaco,,,,,,,,,,nationality,MDA,Rep. of Moldova,,,,,,,,,,nationality,MDV,Maldives,,,,,,,,,,nationality,MEX,Mexico,,,,,,,,,,nationality,MHL,Marshall Islands,,,,,,,,,,nationality,MLI,Mali,,,,,,,,,,nationality,MYS,Malaysia,,,,,,,,,,nationality,MWI,Malawi,,,,,,,,,,nationality,MNE,Montenegro,,,,,,,,,,nationality,MNG,Mongolia,,,,,,,,,,nationality,MAR,Morocco,,,,,,,,,,nationality,MOZ,Mozambique,,,,,,,,,,nationality,MSR,Montserrat,,,,,,,,,,nationality,MLT,Malta,,,,,,,,,,nationality,MUS,Mauritius,,,,,,,,,,nationality,MMR,Myanmar,,,,,,,,,,nationality,MYT,Mayotte,,,,,,,,,,nationality,NAM,Namibia,,,,,,,,,,nationality,NPL,Nepal,,,,,,,,,,nationality,NLD,Netherlands,,,,,,,,,,nationality,NFK,Norfolk Island,,,,,,,,,,nationality,NER,Niger,,,,,,,,,,nationality,NIC,Nicaragua,,,,,,,,,,nationality,NGA,Nigeria,,,,,,,,,,nationality,NIU,Niue,,,,,,,,,,nationality,NOR,Norway,,,,,,,,,,nationality,NRU,Nauru,,,,,,,,,,nationality,NZL,New Zealand,,,,,,,,,,nationality,OMN,Oman,,,,,,,,,,nationality,PAK,Pakistan,,,,,,,,,,nationality,PAN,Panama,,,,,,,,,,nationality,PRY,Paraguay,,,,,,,,,,nationality,PCN,Pitcairn,,,,,,,,,,nationality,PER,Peru,,,,,,,,,,nationality,PHL,Philippines,,,,,,,,,,nationality,PLW,Palau,,,,,,,,,,nationality,PNG,Papua New Guinea,,,,,,,,,,nationality,POL,Poland,,,,,,,,,,nationality,PRT,Portugal,,,,,,,,,,nationality,PRI,Puerto Rico,,,,,,,,,,nationality,QAT,Qatar,,,,,,,,,,nationality,REU,Réunion,,,,,,,,,,nationality,ROU,Romania,,,,,,,,,,nationality,ZAF,South Africa,,,,,,,,,,nationality,RUS,Russian Federation,,,,,,,,,,nationality,RWA,Rwanda,,,,,,,,,,nationality,SLV,El Salvador,,,,,,,,,,nationality,SAU,Saudi Arabia,,,,,,,,,,nationality,SEN,Senegal,,,,,,,,,,nationality,SYC,Seychelles,,,,,,,,,,nationality,SGP,Singapore,,,,,,,,,,nationality,SJM,Svalbard and Jan Mayen,,,,,,,,,,nationality,SLE,Sierra Leone,,,,,,,,,,nationality,SMR,San Marino,,,,,,,,,,nationality,SLB,Solomon Islands,,,,,,,,,,nationality,SOM,Somalia,,,,,,,,,,nationality,ESP,Spain,,,,,,,,,,nationality,SPM,Saint-Pierre-et-Miquelon,,,,,,,,,,nationality,SRB,Serbia and Kosovo: S/RES/1244 (1999),,,,,,,,,,nationality,VNM,Viet Nam,,,,,,,,,,nationality,SSD,South Sudan,,,,,,,,,,nationality,XXA,Stateless,,,,,,,,,,nationality,KNA,Saint Kitts and Nevis,,,,,,,,,,nationality,STP,Sao Tome and Principe,,,,,,,,,,nationality,SDN,Sudan,,,,,,,,,,nationality,SUR,Suriname,,,,,,,,,,nationality,SVK,Slovakia,,,,,,,,,,nationality,SVN,Slovenia,,,,,,,,,,nationality,SWZ,Swaziland,,,,,,,,,,nationality,SWE,Sweden,,,,,,,,,,nationality,CHE,Switzerland,,,,,,,,,,nationality,SXM,Sint Maarten (Dutch part),,,,,,,,,,nationality,TZA,United Rep. of Tanzania,,,,,,,,,,nationality,TCA,Turks and Caicos Islands,,,,,,,,,,nationality,THA,Thailand,,,,,,,,,,nationality,TIB,Tibetan,,,,,,,,,,nationality,TJK,Tajikistan,,,,,,,,,,nationality,TKM,Turkmenistan,,,,,,,,,,nationality,TLS,Timor-Leste,,,,,,,,,,nationality,TGO,Togo,,,,,,,,,,nationality,TON,Tonga,,,,,,,,,,nationality,TTO,Trinidad and Tobago,,,,,,,,,,nationality,TUN,Tunisia,,,,,,,,,,nationality,TUV,Tuvalu,,,,,,,,,,nationality,ARE,United Arab Emirates,,,,,,,,,,nationality,UGA,Uganda,,,,,,,,,,nationality,UKR,Ukraine,,,,,,,,,,nationality,URY,Uruguay,,,,,,,,,,nationality,USA,United States of America,,,,,,,,,,nationality,UZB,Uzbekistan,,,,,,,,,,nationality,VUT,Vanuatu,,,,,,,,,,nationality,XXC,Various,,,,,,,,,,nationality,VAT,Holy See (the),,,,,,,,,,nationality,VCT,Saint Vincent and the Grenadines,,,,,,,,,,nationality,VEN,Venezuela (Bolivarian Republic of),,,,,,,,,,nationality,VIR,US Virgin Islands,,,,,,,,,,nationality,WSM,Samoa,,,,,,,,,,nationality,WLF,Wallis and Futuna Islands ,,,,,,,,,,nationality,ESH,Western Sahara,,,,,,,,,,nationality,YEM,Yemen,,,,,,,,,,nationality,SCG,Serbia and Montenegro,,,,,,,,,,nationality,ZMB,Zambia,,,,,,,,,,nationality,ZWE,Zimbabwe,,,,,,,,,,,,,,,,,,,,,,association,authority,Authority,,,,,,,,,,association,agency,Agency ,,,,,,,,,,association,informal_entity,Informal community entity,,,,,,,,,,association,formal_entity,Formal community entity (other than authority),,,,,,,,,,association,freelance_member,Freelance community member,,,,,,,,,,,,,,,,,,,,,,collaboration,local_authority,Authority,,,,,,,,,,collaboration,comm_entity,Informal community group,,,,,,,,,,collaboration,local_cbo,Community-based organization,,,,,,,,,,collaboration,local_ngo,Non-Governmental organization,,,,,,,,,,collaboration,comm_member,Community members,,,,,,,,,,collaboration,agency,Agency ,,,,,,,,,,collaboration,prof_association,Professional association,,,,,,,,,,collaboration,interestbased_orga,Interest-based organization,,,,,,,,,,collaboration,none,None,,,,,,,,,,,,,,,,,,,,,,groupcategories,individual,Individual,,,,,,,,,,groupcategories,informal,Informal community entity,,,,,,,,,,groupcategories,formal,Formal community entity,,,,,,,,,,,,,,,,,,,,,,sex,female,Female,,,,,,,,,,sex,male,Male,,,,,,,,,,sex,other,Other,,,,,,,,,,,,,,,,,,,,,,member_status,refugee,Refugee/Asylum-seeker,,,,,,,,,,member_status,host_member,Host community member,,,,,,,,,,member_status,idp,Internally displaced person,,,,,,,,,,member_status,diaspora,Diaspora Member,,,,,,,,,,member_status,legal_residing_foreign,Legally residing foreign nationals,,,,,,,,,,member_status,returnee,Returnees,,,,,,,,,,member_status,mixed_movement,Person in mixed movement situation,,,,,,,,,,,,,,,,,,,,,,number_members,more_then_100,More then 100   ,,,,,,,,,,number_members,more_then_50,More then 50,,,,,,,,,,number_members,more_then_20,More then 20  ,,,,,,,,,,number_members,less_than_20,Less than 20,,,,,,,,,,,,,,,,,,,,,,members,host_member,Host community members,,,,,,,,,,members,refugee_member,Refugees/Asylum-seekers,,,,,,,,,,members,IDP_member,Internally displaced persons,,,,,,,,,,members,diaspora_member,Diaspora members ,,,,,,,,,,members,legal_residing_foreign,Legally residing foreign nationals,,,,,,,,,,members,returnee,Returnees,,,,,,,,,,members,mixed_movement,Persons in mixed movement situtations,,,,,,,,,,,,,,,,,,,,,,membership,anyone,Anyone who is interested,,,,,,,,,,membership,fulfill_criteria,Only those who fulfill criteria,,,,,,,,,,membership,no_membership,No membership requirement,,,,,,,,,,membership,certain_area,People living in certain area ,,,,,,,,,,membership,specific_background,People with specific background,,,,,,,,,,,,,,,,,,,,,,establishment,traditional_leaders,Through traditional leaders,,,,,,,,,,establishment,religious_leaders,Through religious leaders,,,,,,,,,,establishment,individual_initiative,Through individual/family initiative,,,,,,,,,,establishment,interested_group,Initiated by interested group of people ,,,,,,,,,,establishment,umbrella_orga,With support of umbrella organization ,,,,,,,,,,establishment,diaspora_members ,With support of diaspora members ,,,,,,,,,,establishment,funding_provider,With support of fund provider,,,,,,,,,,establishment,public_institution ,as a public institution ,,,,,,,,,,establishment,prof_association,as a professional association,,,,,,,,,,establishment,government,By the government,,,,,,,,,,,,,,,,,,,,,,structure,ad_hoc_structure,Ad hoc structure  ,,,,,,,,,,structure,traditional_structure,Traditional structure ,,,,,,,,,,structure,elected_structure,Elected structure   ,,,,,,,,,,structure,selected_structure,Selected/Nominated structure,,,,,,,,,,structure,fixed_structure,Fixed structure,,,,,,,,,,structure,no_specific,No specific structure ,,,,,,,,,,,,,,,,,,,,,,percent,0,0%,,,,,,,,,,percent,0.1,10%,,,,,,,,,,percent,0.2,20%,,,,,,,,,,percent,0.3,30%,,,,,,,,,,percent,0.4,40%,,,,,,,,,,percent,0.5,50%,,,,,,,,,,percent,0.6,60%,,,,,,,,,,percent,0.7,70%,,,,,,,,,,percent,0.8,80%,,,,,,,,,,percent,0.9,90%,,,,,,,,,,percent,1,100%,,,,,,,,,,,,,,,,,,,,,,service,sharing_info,Sharing information on availability of and accessibility to the services ,,,,Prevention activities,,,,,,service,awareness_campaign,Awareness activities,,,,Prevention activities,,,,,,service,community_dialogue,Community dialogue,,,,Prevention activities,,,,,,service,organizing_events,Organizing or participating in community events ,,,,Prevention activities,,,,,,service,recreation_activities,Recreational activities,,,,Prevention activities,,,,,,service,training_education,Skill and knowledge development support,,,,Skill development and income generation,,,,,,service,poc_identification,Identifying persons with specific needs,,,,Response activities,,,,,,service,mediation,Supporting for alternative dispute resolution,,,,Response activities,,,,,,service,community_building,Community building,,,,Community building,,,,,,service,community_initiatives,Taking or supporting community-led initiatives,,,,Community building,,,,,,service,advocacy_support,Taking lead or participating in advocacy ,,,,Advocacy/consultation/networking (with)– agencies, local authorities, donors, national authorities, media, entrepreneurs, academicsservice,service_delivery,Helping people in need with specific support/action,,,,Service Delivery,,,,,,service,facilitating_access,Facilitating access to services,,,,,,,,,,service,facilitating_complaints,Facilitating complaints to service provider,,,,,,,,,,service,facilitating_feedback,Facilitating feedback,,,,,,,,,,service,identifying_concerns,Identifying concerns, challenges and solutions,,,,,,,,,service,resolving_dispute,Resolving inter-community disputes,,,,,,,,,,service,certain_empowerment,Empowering certain segment of community,,,,,,,,,,service,language_support,Language support,,,,,,,,,,service,technical_advices,Technical/professional advices,,,,,,,,,,service,preventative_activities,Preventative activities,,,,,,,,,,,,,,,,,,,,,,workarea,education,Education ,,,,,,,,,,workarea,child_protection ,Child Protection ,,,,,,,,,,workarea,housing_shelter ,Housing/land issues,,,,,,,,,,workarea,water_sanitation ,Water/Sanitation/Hygiene,,,,,,,,,,workarea,health_nutrition ,Health/Nutrition ,,,,,,,,,,workarea,sgbv,Gender empowerment,,,,,,,,,,workarea,materials ,Food and household materials,,,,,,,,,,workarea,psychosocial_support ,Mental Health & Psychosocial Support ,,,,,,,,,,workarea,social_cohesion,Social Cohesion,,,,,,,,,,workarea,detention ,Detention monitoring and alternatives to detention,,,,,,,,,,workarea,civil_documentation ,Birth registration and other documentation,,,,,,,,,,workarea,Livelihood ,Livelihood & Income generation,,,,,,,,,,workarea,legal_aid,Legal Aid/Support ,,,,,,,,,,workarea,group_empowerment,Specific group empowerment,,,,,,,,,,workarea,protection,Protection and human rights,,,,,,,,,,workarea,integration,Integration or Reintegration,,,,,,,,,,workarea,justice_access,Access to justice,,,,,,,,,,,,,,,,,,,,,,social_recognition,counsellor,as counsellor/advisor ,,,,,,,,,,social_recognition,community_worker,as community worker/volunteer,,,,,,,,,,social_recognition,religious_leader,as religious leader ,,,,,,,,,,social_recognition,traditional_leader,as traditional leader ,,,,,,,,,,social_recognition,youth_leader,as youth activist,,,,,,,,,,social_recognition,community_mediator,as community mediator or negotiator ,,,,,,,,,,social_recognition,women_activist,as women activist,,,,,,,,,,social_recognition,social_activist,as social activist ,,,,,,,,,,social_recognition,recreationist,as recreationist ,,,,,,,,,,social_recognition,solution_finder,as solution finder ,,,,,,,,,,social_recognition,influential_figure,as influential person,,,,,,,,,,social_recognition,community_intellectual,as community intellectual  ,,,,,,,,,,social_recognition,info_source,as informant,,,,,,,,,,social_recognition,helper,as helper or supporter,,,,,,,,,,social_recognition,community_innovator,as community innovator,,,,,,,,,,social_recognition,role_model,as role model,,,,,,,,,,,,,,,,,,,,,,skill_development,children_below_13,For children ( < 13 ),,,,,,,,,,skill_development,children_14-17,For children ( 14-17 ),,,,,,,,,,skill_development,youth,For youth ( 18-24 ),,,,,,,,,,skill_development,adult_women,For adult women,,,,,,,,,,skill_development,adult_men,For adult men,,,,,,,,,,,,,,,,,,,,,,timeavailable,little,daily,,,,,,,,,,timeavailable,some,more than twice a week,,,,,,,,,,timeavailable,lot,more than once a week,,,,,,,,,,timeavailable,daily_basis,more than twice a month,,,,,,,,,,timeavailable,twice_week,more than once a month,,,,,,,,,,timeavailable,flexibly,flexibly on request,,,,,,,,,,,,,,,,,,,,,,targeted_persons,anybody,Anybody who approaches,,,,,,,,,,targeted_persons,people_from_area,People from this area,,,,,,,,,,targeted_persons,ref_asylum_seekers,Refugees/Asylum seekers,,,,,,,,,,targeted_persons,idp,Internally displaced persons,,,,,,,,,,targeted_persons,host_comm,Host community members,,,,,,,,,,targeted_persons,returnees,Returnees,,,,,,,,,,targeted_persons,mixed_movement,People in mixed movements,,,,,,,,,,,,,,,,,,,,,,specific_group,women_and_girls,Women and girls,,,,,,,,,,specific_group,youth,Youth (15-24),,,,,,,,,,specific_group,adolescent,Adolescent (10-14),,,,,,,,,,specific_group,children,Children (< 18),,,,,,,,,,specific_group,older_persons,Older persons (60 +),,,,,,,,,,specific_group,disabled_persons,Persons with disabilities ,,,,,,,,,,specific_group,unaccompanied_children,Unaccompanied/separated children ,,,,,,,,,,specific_group,unaccompanied_older_persons,Unaccompanied older persons,,,,,,,,,,specific_group,lgbti_persons,LGBTI persons ,,,,,,,,,,specific_group,minority_commmembers,Minority community members ,,,,,,,,,,specific_group,survivor_gb_violence,Survivor of gender-based violence ,,,,,,,,,,specific_group,people_need_psychosoc_support,People living with mental health and psychosocial problems,,,,,,,,,,specific_group,marginalized_comm_members,Marginalized members in the community,,,,,,,,,,specific_group,socioecon_vulnerable,Socio-economically vulnerable  ,,,,,,,,,,specific_group,female_headed,Female headed households,,,,,,,,,,specific_group,orphans,Orphans,,,,,,,,,,specific_group,single_individuals,Single and house-bound individuals ,,,,,,,,,,specific_group,none,No focus on a specific group,,,,,,,,,,,,,,,,,,,,,,cap_human_resources,community_volunteers,Community volunteers,,,,,,,,,,cap_human_resources,skilled_community_members ,Skilled community members ,,,,,,,,,,cap_human_resources,skilled_external,Skilled group of people from outside the community ,,,,,,,,,,cap_human_resources,professionals ,Professionals ,,,,,,,,,,cap_human_resources,influential_leaders,Influential community leaders and members ,,,,,,,,,,cap_human_resources,community_network ,Network members,,,,,,,,,,cap_human_resources,collaborating_partner,Collaborating agency or authority,,,,,,,,,,cap_human_resources,knowledgeable_members ,Recognized and knowledgeable community members ,,,,,,,,,,cap_human_resources,dedicated_staff ,Dedicated staff ,,,,,,,,,,,,Local community based organization or authotity,,,,,,,,,,meeting_space,sport_club,Sport Club ,,,,,,,,,,meeting_space,park,Park or open space,,,,,,,,,,meeting_space,public_place,Public Place/Building  ,,,,,,,,,,meeting_space,religious_place,Religious Place,,,,,,,,,,meeting_space,community_center,Community Center  ,,,,,,,,,,meeting_space,community_event_space,Community Event Space,,,,,,,,,,meeting_space,youth_club,Youth Club,,,,,,,,,,meeting_space,community_office,Office of the Community,,,,,,,,,,meeting_space,school,School or educational institution,,,,,,,,,,meeting_space,local_authority,Office of the local authority/municipality,,,,,,,,,,meeting_space,private_entity,Office of a private entity,,,,,,,,,,meeting_space,no_specific_place,No specific place,,,,,,,,,,,,,,,,,,,,,,access_space,own_space,Own space,,,,,,,,,,access_space,rental_basis,Rental basis,,,,,,,,,,access_space,freely_available,Freely available,,,,,,,,,,access_space,ad_hoc,On ad-hoc basis,,,,,,,,,,access_space,randomly,Randomly used,,,,,,,,,,access_space,public,Public space,,,,,,,,,,access_space,pre_agreement,On pre-agreement basis,,,,,,,,,,,,,,,,,,,,,,conduciveness,not,Not conducive,,,,,,,,,,conduciveness,minimally,Minimally conducive,,,,,,,,,,conduciveness,largely,Largely conducive,,,,,,,,,,conduciveness,very,Very conducive,,,,,,,,,,,,,,,,,,,,,,information_platform,webpage,Webpage  [browsing page - manual entry] ,,,,,,,,,,information_platform,facebook,Facebook  [page name - manual entry],,,,,,,,,,information_platform,blog,Blog [browsing page - manual entry],,,,,,,,,,information_platform,email,Email  [email ID - manual entry],,,,,,,,,,information_platform,phone,Phone call,,,,,,,,,,information_platform,whatsapp_sms_vibor,WhatsApp/SMS/Viber [contact details - manual entry],,,,,,,,,,information_platform,community_meeting,Neighborhood/community meeting,,,,,,,,,,information_platform,community_network ,Social/Community network ,,,,,,,,,,information_platform,posters,Leaflets/broachers/posters,,,,,,,,,,information_platform,local_radio,Local Radio/FM [name of the station - manual entry],,,,,,,,,,information_platform,e_newspaper,e-newspaper [name - manual entry],,,,,,,,,,information_platform,home_visit,Home visit,,,,,,,,,,information_platform,personally,Meeting in-person,,,,,,,,,,information_platform,local_network,Through local social network,,,,,,,,,,information_platform,community_based_event,Drama and community-based event,,,,,,,,,,information_platform,group_discussion,Group discussion/meeting ,,,,,,,,,,information_platform,events_pecial_days ,Organizing events during the special days ,,,,,,,,,,,,,,,,,,,,,,duration_services,less_6_month,Less then 6 month,,,,,,,,,,duration_services,more_6_month,More then 6 month,,,,,,,,,,duration_services,more_1_years,More then 1 years,,,,,,,,,,duration_services,more_3_years,More then 3 year,,,,,,,,,,duration_services,more_5_years,More then 5 years,,,,,,,,,,,,,,,,,,,,,,yes_no,yes,Yes,,,,,,,,,,yes_no,no,No,,,,,,,,,,,,,,,,,,,,,,skills,tailor,Tailoring/fashion design,,,,hard_skill,,,,,,skills,hairdesign,Hair styling and cosmetology,,,,hard_skill,,,,,,skills,vender,Dental care,,,,hard_skill,,,,,,skills,entrepreneur,Entrepreneur/vender,,,,hard_skill,,,,,,skills,stylist,Beautician/styling,,,,hard_skill,,,,,,skills,mechanical,Mechanical,,,,hard_skill,,,,,,skills,shelter,Shelter/housing mediation/negotiation,,,,hard_skill,,,,,,skills,pharmacist,Pharmacist,,,,hard_skill,,,,,,skills,cybercafé,Plumbing/fitting,,,,hard_skill,,,,,,skills,professional,Career counseling/support with formal documents,,,,hard_skill,,,,,,skills,appliance,Appliance repair and maintenance,,,,hard_skill,,,,,,skills,electrician,Electrician,,,,hard_skill,,,,,,skills,carpentry,Carpentry/Joinery,,,,,,,,,,skills,construction,Construction,,,,,,,,,,skills,veterinary,Veterinary technology,,,,,,,,,,skills,computer,Computer support,,,,,,,,,,skills,food_processing,Food processing/services,,,,,,,,,,skills,public_safety,Public safety,,,,,,,,,,skills,bookkeeping,Bookkeeping, accounting, auditing,,,,,,,,skills,children_service,Children services,,,,,,,,,,skills,health_care,Health care and social assistance,,,,,,,,,,skills,manufacturing,Manufacturing,,,,,,,,,,skills,trucking,Trucking,,,,,,,,,,skills,car_servicing,Car servicing,,,,,,,,,,skills,handicraft,Handicraft,,,,,,,,,,skills,training,Facilitating training,,,,,,,,,,skills,sign_language,Sign language,,,,,,,,,,,,,,,,,,,,,,talents,singing,Singing,,,,talent,,,,,,talents,dancing,Dancing,,,,talent,,,,,,talents,playing_music,Music playing/composing,,,,talent,,,,,,talents,acting,Acting,,,,talent,,,,,,talents,commedian,Commedian,,,,,,,,,,talents,literature_writing,Literature writing,,,,talent,,,,,,talents,drawing,Drawing/painting,,,,talent,,,,,,talents,athlete,Athlete/sport playing,,,,talent,,,,,,talents,artisan,Artisan,,,,talent,,,,,,talents,storytelling,Storytelling,,,,talent,,,,,,talents,innovation,Innovation,,,,talent,,,,,,,,,,,,,,,,,,yes_no_meeting,yes_here,Yes - here at this place,,,,,,,,,,yes_no_meeting,yes_other,Yes - at another place,,,,,,,,,,yes_no_meeting,no,No,,,,,,,,,,,,,,,,,,,,,,reward,support_work,Specific support linked to the work,,,,,,,,,,reward,certification,Appreciation through certificate,,,,,,,,,,reward,public,Providing social recognition,,,,,,,,,,reward,promotion,Promotion of the good work,,,,,,,,,,reward,engaging_reasons,Knowing reasons for volunteering,,,,,,,,,,reward,comm_loop,Keeping in the communication loop,,,,,,,,,,reward,sharing_ideas,Getting access to a forum to share experiences and ideas,,,,,,,,,,,,,,,,,,,,,,ethical_standards,code_conduct,Through code of conduct,,,,,,,,,,ethical_standards,agreed_practice,Through agreed practices,,,,,,,,,,ethical_standards,ad-hoc_basis,Once complaint is received,,,,,,,,,,ethical_standards,planned,We plan to adopt minimum behavioural standard,,,,,,,,,,ethical_standards,not_thought,Have not thought of it,,,,,,,,,,,,,,,,,,,,,,secondary_provider,individual_ref,Yes, to an individual,,,,,,,,,secondary_provider,community_ref,Yes, to a community,,,,,,,,,secondary_provider,no_referral,No, I don't refer individuals to others,,,,,,,,,,,,,,,,,,,,,support,community_space,Having better or more community space,,,,,,,,,,support,human_resources,Having more actively engaged community members,,,,,,,,,,support,skills,Having more specific skills to provide more services,,,,,,,,,,support,communication,Having better communication channels,,,,,,,,,,support,community_network,Having a better network with other communities ,,,,,,,,,,
+﻿list_name;name;label;country;service;workarea;
+adm0;SYR;Syrian Arab Republic;;;;
+adm0;IRQ;Iraq;;;;
+adm0;JOR;Jordan;;;;
+adm0;LBN;Lebanon;;;;
+adm0;TUR;Turkey;;;;
+adm0;IRN;Iran;;;;
+adm0;ISR;Israel;;;;
+adm0;PSE;State of Palestine;;;;
+adm0;BAH;Bahrein;;;;
+adm0;OMN;Oman;;;;
+adm0;UAE;United Arab Emirates;;;;
+adm0;SAU;Saudi Arabia;;;;
+adm0;KWT;Kuweit;;;;
+adm0;QAT;Qatar;;;;
+adm0;YEM;Yemen;;;;
+adm0;MRT;Mauritania;;;;
+adm0;ESH;Western Sahara;;;;
+adm0;MAR;Marocco;;;;
+adm0;DZA;Algeria;;;;
+adm0;TUN;Tunisia;;;;
+adm0;LBY;Libya;;;;
+adm0;EGY;Egypt;;;;
+;;;;;;
+adm1;EGY02;Aswan;EGY;;;
+adm1;EGY03;Assiut;EGY;;;
+adm1;EGY12;Ismailia;EGY;;;
+adm1;EGY22;Red Sea;EGY;;;
+adm1;EGY04;Behera;EGY;;;
+adm1;EGY07;Dakahlia;EGY;;;
+adm1;EGY26;Suez;EGY;;;
+adm1;EGY10;Gharbia;EGY;;;
+adm1;EGY17;Menoufia;EGY;;;
+adm1;EGY16;Menia;EGY;;;
+adm1;EGY18;New Valley;EGY;;;
+adm1;EGY05;Beni Suef;EGY;;;
+adm1;EGY25;South Sinai;EGY;;;
+adm1;EGY24;Suhag;EGY;;;
+adm1;EGY19;North Sinai;EGY;;;
+adm1;EGY20;Qena;EGY;;;
+adm1;EGY13;Kafr El-Shikh;EGY;;;
+adm1;EGY14;Luxor;EGY;;;
+adm1;EGY15;Matrouh;EGY;;;
+adm1;EGY06;Cairo;EGY;;;
+adm1;EGY11;Giza;EGY;;;
+adm1;EGY08;Damietta;EGY;;;
+adm1;EGY23;Sharkia;EGY;;;
+adm1;EGY01;Alexandria;EGY;;;
+adm1;EGY21;Kalyoubia;EGY;;;
+adm1;EGY09;Fayoum;EGY;;;
+adm1;EGYXX;Ma'tan al-Sarra;EGY;;;
+adm1;IRQ01;Anbar;IRQ;;;
+adm1;IRQ15;Ninewa;IRQ;;;
+adm1;IRQ02;Basrah;IRQ;;;
+adm1;IRQ14;Missan;IRQ;;;
+adm1;IRQ03;Muthanna;IRQ;;;
+adm1;IRQ08;Dahuk;IRQ;;;
+adm1;IRQ11;Erbil;IRQ;;;
+adm1;IRQ10;Diyala;IRQ;;;
+adm1;IRQ16;Wassit;IRQ;;;
+adm1;IRQ17;Najaf;IRQ;;;
+adm1;IRQ05;Sulaymaniyah;IRQ;;;
+adm1;IRQ06;Babil;IRQ;;;
+adm1;IRQ07;Baghdad;IRQ;;;
+adm1;IRQ12;Kerbala;IRQ;;;
+adm1;IRQ18;Salah al-Din;IRQ;;;
+adm1;IRQ04;Qadissiya;IRQ;;;
+adm1;IRQ09;Thi-Qar;IRQ;;;
+adm1;IRQ13;Kirkuk;IRQ;;;
+adm1;TUR001;Adana;TUR;;;
+adm1;TUR002;Adiyaman;TUR;;;
+adm1;TUR003;Afyon;TUR;;;
+adm1;TUR004;AÃ„Å¸rÃ„Â±;TUR;;;
+adm1;TUR005;Aksaray;TUR;;;
+adm1;TUR006;Amasya;TUR;;;
+adm1;TUR007;Ankara;TUR;;;
+adm1;TUR008;Antalya;TUR;;;
+adm1;TUR009;Ardahan;TUR;;;
+adm1;TUR010;Artvin;TUR;;;
+adm1;TUR011;Aydin;TUR;;;
+adm1;TUR012;Balikesir;TUR;;;
+adm1;TUR013;Bartin;TUR;;;
+adm1;TUR014;Batman;TUR;;;
+adm1;TUR015;Bayburt;TUR;;;
+adm1;TUR016;Bilecik;TUR;;;
+adm1;TUR017;BingÃƒÂ¶l;TUR;;;
+adm1;TUR018;Bitlis;TUR;;;
+adm1;TUR019;Bolu;TUR;;;
+adm1;TUR020;Burdur;TUR;;;
+adm1;TUR021;Bursa;TUR;;;
+adm1;TUR022;Ãƒâ€¡anakkale;TUR;;;
+adm1;TUR023;Cankiri;TUR;;;
+adm1;TUR024;Ãƒâ€¡orum;TUR;;;
+adm1;TUR025;Denizli;TUR;;;
+adm1;TUR026;Diyarbakir;TUR;;;
+adm1;TUR027;Edirne;TUR;;;
+adm1;TUR028;ElÃƒÂ¢zÃ„Â±Ã„Å¸;TUR;;;
+adm1;TUR029;Erzincan;TUR;;;
+adm1;TUR030;Erzurum;TUR;;;
+adm1;TUR031;EskiÃ…Å¸ehir;TUR;;;
+adm1;TUR032;Gaziantep;TUR;;;
+adm1;TUR033;Giresun;TUR;;;
+adm1;TUR034;GÃƒÂ¼mÃƒÂ¼Ã…Å¸hane;TUR;;;
+adm1;TUR035;HakkÃƒÂ¢ri;TUR;;;
+adm1;TUR036;Hatay;TUR;;;
+adm1;TUR037;Mersin;TUR;;;
+adm1;TUR038;IÃ„Å¸dÃ„Â±r;TUR;;;
+adm1;TUR039;Isparta;TUR;;;
+adm1;TUR040;Istanbul;TUR;;;
+adm1;TUR041;Izmir;TUR;;;
+adm1;TUR042;KahramanmaraÃ…Å¸;TUR;;;
+adm1;TUR043;KarabÃƒÂ¼k;TUR;;;
+adm1;TUR044;Karaman;TUR;;;
+adm1;TUR045;Kars;TUR;;;
+adm1;TUR046;Kastamonu;TUR;;;
+adm1;TUR047;Kayseri;TUR;;;
+adm1;TUR048;Kilis;TUR;;;
+adm1;TUR049;Kirikkale;TUR;;;
+adm1;TUR050;Kirklareli;TUR;;;
+adm1;TUR051;KÃ„Â±rÃ…Å¸ehir;TUR;;;
+adm1;TUR052;Kocaeli;TUR;;;
+adm1;TUR053;Konya;TUR;;;
+adm1;TUR054;KÃƒÂ¼tahya;TUR;;;
+adm1;TUR055;Malatya;TUR;;;
+adm1;TUR056;Manisa;TUR;;;
+adm1;TUR057;Mardin;TUR;;;
+adm1;TUR058;MuÃ„Å¸la;TUR;;;
+adm1;TUR059;Mus;TUR;;;
+adm1;TUR060;NevÃ…Å¸ehir;TUR;;;
+adm1;TUR061;NiÃ„Å¸de;TUR;;;
+adm1;TUR062;Ordu;TUR;;;
+adm1;TUR063;Osmaniye;TUR;;;
+adm1;TUR064;Rize;TUR;;;
+adm1;TUR065;Sakarya;TUR;;;
+adm1;TUR066;Samsun;TUR;;;
+adm1;TUR067;Ã…Å¾anlÃ„Â±urfa;TUR;;;
+adm1;TUR068;Siirt;TUR;;;
+adm1;TUR069;Sinop;TUR;;;
+adm1;TUR070;Ã…Å¾Ã„Â±rnak;TUR;;;
+adm1;TUR071;Sivas;TUR;;;
+adm1;TUR072;TekirdaÃ„Å¸;TUR;;;
+adm1;TUR073;Tokat;TUR;;;
+adm1;TUR074;Trabzon;TUR;;;
+adm1;TUR075;Tunceli;TUR;;;
+adm1;TUR076;UÃ…Å¸ak;TUR;;;
+adm1;TUR077;Van;TUR;;;
+adm1;TUR078;Yalova;TUR;;;
+adm1;TUR079;Yozgat;TUR;;;
+adm1;TUR080;Zonguldak;TUR;;;
+adm1;TUR081;DÃƒÂ¼zce;TUR;;;
+adm1;SYR07;Idleb;SYR;;;
+adm1;SYR08;Al-Hasakeh;SYR;;;
+adm1;SYR11;Ar-Raqqa;SYR;;;
+adm1;SYR13;As-Sweida;SYR;;;
+adm1;SYR14;Quneitra;SYR;;;
+adm1;SYR06;Lattakia;SYR;;;
+adm1;SYR02;Aleppo;SYR;;;
+adm1;SYR05;Hama;SYR;;;
+adm1;SYR04;Homs;SYR;;;
+adm1;SYR12;Dar'a;SYR;;;
+adm1;SYR09;Deir-ez-Zor;SYR;;;
+adm1;SYR03;Rural Damascus;SYR;;;
+adm1;SYR10;Tartous;SYR;;;
+adm1;SYR01;Damascus;SYR;;;
+adm1;JOR21;Irbid;JOR;;;
+adm1;JOR24;Ajloun;JOR;;;
+adm1;JOR12;Al Balqa;JOR;;;
+adm1;JOR11;Amman;JOR;;;
+adm1;JOR31;Al Karak;JOR;;;
+adm1;JOR34;Al Aqaba;JOR;;;
+adm1;JOR14;Madaba;JOR;;;
+adm1;JOR13;Zarqa;JOR;;;
+adm1;JOR32;Al Tafilah;JOR;;;
+adm1;JOR33;Ma'an;JOR;;;
+adm1;JOR23;Jarash;JOR;;;
+adm1;JOR22;Al Mafraq;JOR;;;
+adm1;LBN05;Akkar;LBN;;;
+adm1;LBN02;Hermel/Baalbek;LBN;;;
+adm1;LBN08;North;LBN;;;
+adm1;LBN03;Mount Lebanon;LBN;;;
+adm1;LBN07;Bekaa;LBN;;;
+adm1;LBN01;Beirut;LBN;;;
+adm1;LBN06;South Lebanon;LBN;;;
+adm1;LBN04;El Nabatieh;LBN;;;
+;;;;;;
+nationality;JOR;Jordan;;;;
+nationality;IRN;Iran (Islamic Rep. of);;;;
+nationality;IRQ;Iraq;;;;
+nationality;ISR;Israel;;;;
+nationality;SYR;Syrian Arab Rep.;;;;
+nationality;EGY;Egypt;;;;
+nationality;AFG;Afghanistan;;;;
+nationality;PSE;State of Palestine;;;;
+nationality;TUR;Turkey;;;;
+nationality;ABW;Aruba;;;;
+nationality;AIA;Anguilla;;;;
+nationality;ALB;Albania;;;;
+nationality;DZA;Algeria;;;;
+nationality;AND;Andorra;;;;
+nationality;AGO;Angola;;;;
+nationality;ATG;Antigua and Barbuda;;;;
+nationality;ARG;Argentina;;;;
+nationality;ARM;Armenia;;;;
+nationality;AUS;Australia;;;;
+nationality;AUT;Austria;;;;
+nationality;AZE;Azerbaijan;;;;
+nationality;BHR;Bahrain;;;;
+nationality;BRB;Barbados;;;;
+nationality;BDI;Burundi;;;;
+nationality;BEL;Belgium;;;;
+nationality;BEN;Benin;;;;
+nationality;BMU;Bermuda;;;;
+nationality;BES;Bonaire, Saint Eustatius and Saba;;;;
+nationality;BGD;Bangladesh;;;;
+nationality;BHS;Bahamas;;;;
+nationality;BTN;Bhutan;;;;
+nationality;BFA;Burkina Faso;;;;
+nationality;BLR;Belarus;;;;
+nationality;BOL;Bolivia (Plurinational State of);;;;
+nationality;BWA;Botswana;;;;
+nationality;BRA;Brazil;;;;
+nationality;BRN;Brunei Darussalam;;;;
+nationality;BIH;Bosnia and Herzegovina;;;;
+nationality;BGR;Bulgaria;;;;
+nationality;VGB;British Virgin Islands;;;;
+nationality;BLZ;Belize;;;;
+nationality;KHM;Cambodia;;;;
+nationality;CAN;Canada;;;;
+nationality;CAF;Central African Rep.;;;;
+nationality;CYM;Cayman Islands;;;;
+nationality;TCD;Chad;;;;
+nationality;CHN;China;;;;
+nationality;CHL;Chile;;;;
+nationality;CMR;Cameroon;;;;
+nationality;COG;Congo, Republic of;;;;
+nationality;COD;Dem. Rep. of the Congo;;;;
+nationality;COM;Comoros;;;;
+nationality;COK;Cook Islands;;;;
+nationality;COL;Colombia;;;;
+nationality;CRI;Costa Rica;;;;
+nationality;CUB;Cuba;;;;
+nationality;CUW;Curaçao;;;;
+nationality;CPV;Cabo Verde;;;;
+nationality;CYP;Cyprus;;;;
+nationality;CZE;Czech Rep.;;;;
+nationality;DNK;Denmark;;;;
+nationality;DJI;Djibouti;;;;
+nationality;DMA;Dominica;;;;
+nationality;DOM;Dominican Rep.;;;;
+nationality;ECU;Ecuador;;;;
+nationality;GNQ;Equatorial Guinea;;;;
+nationality;ERI;Eritrea;;;;
+nationality;EST;Estonia;;;;
+nationality;ETH;Ethiopia;;;;
+nationality;GUF;French Guiana;;;;
+nationality;FJI;Fiji;;;;
+nationality;FIN;Finland;;;;
+nationality;NCL;New Caledonia;;;;
+nationality;PYF;French Polynesia;;;;
+nationality;FRA;France;;;;
+nationality;FRO;Faeroe Islands;;;;
+nationality;FSM;Micronesia (Federated States of);;;;
+nationality;GAB;Gabon;;;;
+nationality;GMB;Gambia;;;;
+nationality;GBR;United Kingdom;;;;
+nationality;GEO;Georgia;;;;
+nationality;DEU;Germany;;;;
+nationality;GHA;Ghana;;;;
+nationality;GIB;Gibraltar;;;;
+nationality;GLP;Guadeloupe;;;;
+nationality;GNB;Guinea-Bissau;;;;
+nationality;GRC;Greece;;;;
+nationality;GRL;Greenland;;;;
+nationality;GRD;Grenada;;;;
+nationality;GTM;Guatemala;;;;
+nationality;GIN;Guinea;;;;
+nationality;GUY;Guyana;;;;
+nationality;HTI;Haiti;;;;
+nationality;HKG;China, Hong Kong SAR;;;;
+nationality;HND;Honduras;;;;
+nationality;HRV;Croatia;;;;
+nationality;HUN;Hungary;;;;
+nationality;ISL;Iceland;;;;
+nationality;CIV;Côte d'Ivoire;;;;
+nationality;IND;India;;;;
+nationality;IDN;Indonesia;;;;
+nationality;IRL;Ireland;;;;
+nationality;ITA;Italy;;;;
+nationality;JAM;Jamaica;;;;
+nationality;JPN;Japan;;;;
+nationality;KAZ;Kazakhstan;;;;
+nationality;KEN;Kenya;;;;
+nationality;KGZ;Kyrgyzstan;;;;
+nationality;KIR;Kiribati;;;;
+nationality;KOR;Rep. of Korea;;;;
+nationality;XKS;Kosovo (SC/RES/1244(1999));;;;
+nationality;PRK;Dem. People's Rep. of Korea;;;;
+nationality;KWT;Kuwait;;;;
+nationality;LAO;Lao People's Dem. Rep.;;;;
+nationality;LBR;Liberia;;;;
+nationality;LBY;Libya;;;;
+nationality;LCA;Saint Lucia;;;;
+nationality;LBN;Lebanon;;;;
+nationality;LSO;Lesotho;;;;
+nationality;LIE;Liechtenstein;;;;
+nationality;LKA;Sri Lanka;;;;
+nationality;LTU;Lithuania;;;;
+nationality;LUX;Luxembourg;;;;
+nationality;LVA;Latvia;;;;
+nationality;MAC;China, Macao SAR;;;;
+nationality;MDG;Madagascar;;;;
+nationality;MTQ;Martinique;;;;
+nationality;MRT;Mauritania;;;;
+nationality;MKD;The former Yugoslav Republic of Macedonia;;;;
+nationality;MCO;Monaco;;;;
+nationality;MDA;Rep. of Moldova;;;;
+nationality;MDV;Maldives;;;;
+nationality;MEX;Mexico;;;;
+nationality;MHL;Marshall Islands;;;;
+nationality;MLI;Mali;;;;
+nationality;MYS;Malaysia;;;;
+nationality;MWI;Malawi;;;;
+nationality;MNE;Montenegro;;;;
+nationality;MNG;Mongolia;;;;
+nationality;MAR;Morocco;;;;
+nationality;MOZ;Mozambique;;;;
+nationality;MSR;Montserrat;;;;
+nationality;MLT;Malta;;;;
+nationality;MUS;Mauritius;;;;
+nationality;MMR;Myanmar;;;;
+nationality;MYT;Mayotte;;;;
+nationality;NAM;Namibia;;;;
+nationality;NPL;Nepal;;;;
+nationality;NLD;Netherlands;;;;
+nationality;NFK;Norfolk Island;;;;
+nationality;NER;Niger;;;;
+nationality;NIC;Nicaragua;;;;
+nationality;NGA;Nigeria;;;;
+nationality;NIU;Niue;;;;
+nationality;NOR;Norway;;;;
+nationality;NRU;Nauru;;;;
+nationality;NZL;New Zealand;;;;
+nationality;OMN;Oman;;;;
+nationality;PAK;Pakistan;;;;
+nationality;PAN;Panama;;;;
+nationality;PRY;Paraguay;;;;
+nationality;PCN;Pitcairn;;;;
+nationality;PER;Peru;;;;
+nationality;PHL;Philippines;;;;
+nationality;PLW;Palau;;;;
+nationality;PNG;Papua New Guinea;;;;
+nationality;POL;Poland;;;;
+nationality;PRT;Portugal;;;;
+nationality;PRI;Puerto Rico;;;;
+nationality;QAT;Qatar;;;;
+nationality;REU;Réunion;;;;
+nationality;ROU;Romania;;;;
+nationality;ZAF;South Africa;;;;
+nationality;RUS;Russian Federation;;;;
+nationality;RWA;Rwanda;;;;
+nationality;SLV;El Salvador;;;;
+nationality;SAU;Saudi Arabia;;;;
+nationality;SEN;Senegal;;;;
+nationality;SYC;Seychelles;;;;
+nationality;SGP;Singapore;;;;
+nationality;SJM;Svalbard and Jan Mayen;;;;
+nationality;SLE;Sierra Leone;;;;
+nationality;SMR;San Marino;;;;
+nationality;SLB;Solomon Islands;;;;
+nationality;SOM;Somalia;;;;
+nationality;ESP;Spain;;;;
+nationality;SPM;Saint-Pierre-et-Miquelon;;;;
+nationality;SRB;Serbia and Kosovo: S/RES/1244 (1999);;;;
+nationality;VNM;Viet Nam;;;;
+nationality;SSD;South Sudan;;;;
+nationality;XXA;Stateless;;;;
+nationality;KNA;Saint Kitts and Nevis;;;;
+nationality;STP;Sao Tome and Principe;;;;
+nationality;SDN;Sudan;;;;
+nationality;SUR;Suriname;;;;
+nationality;SVK;Slovakia;;;;
+nationality;SVN;Slovenia;;;;
+nationality;SWZ;Swaziland;;;;
+nationality;SWE;Sweden;;;;
+nationality;CHE;Switzerland;;;;
+nationality;SXM;Sint Maarten (Dutch part);;;;
+nationality;TZA;United Rep. of Tanzania;;;;
+nationality;TCA;Turks and Caicos Islands;;;;
+nationality;THA;Thailand;;;;
+nationality;TIB;Tibetan;;;;
+nationality;TJK;Tajikistan;;;;
+nationality;TKM;Turkmenistan;;;;
+nationality;TLS;Timor-Leste;;;;
+nationality;TGO;Togo;;;;
+nationality;TON;Tonga;;;;
+nationality;TTO;Trinidad and Tobago;;;;
+nationality;TUN;Tunisia;;;;
+nationality;TUV;Tuvalu;;;;
+nationality;ARE;United Arab Emirates;;;;
+nationality;UGA;Uganda;;;;
+nationality;UKR;Ukraine;;;;
+nationality;URY;Uruguay;;;;
+nationality;USA;United States of America;;;;
+nationality;UZB;Uzbekistan;;;;
+nationality;VUT;Vanuatu;;;;
+nationality;XXC;Various;;;;
+nationality;VAT;Holy See (the);;;;
+nationality;VCT;Saint Vincent and the Grenadines;;;;
+nationality;VEN;Venezuela (Bolivarian Republic of);;;;
+nationality;VIR;US Virgin Islands;;;;
+nationality;WSM;Samoa;;;;
+nationality;WLF;Wallis and Futuna Islands ;;;;
+nationality;ESH;Western Sahara;;;;
+nationality;YEM;Yemen;;;;
+nationality;SCG;Serbia and Montenegro;;;;
+nationality;ZMB;Zambia;;;;
+nationality;ZWE;Zimbabwe;;;;
+;;;;;;
+association;authority;Authority;;;;
+association;agency;Agency ;;;;
+association;informal_entity;Informal community entity;;;;
+association;formal_entity;Formal community entity (other than authority);;;;
+association;freelance_member;Freelance community member;;;;
+;;;;;;
+collaboration;local_authority;Authority;;;;
+collaboration;comm_entity;Informal community group;;;;
+collaboration;local_cbo;Community-based organization;;;;
+collaboration;local_ngo;Non-Governmental organization;;;;
+collaboration;comm_member;Community members;;;;
+collaboration;agency;Agency ;;;;
+collaboration;prof_association;Professional association;;;;
+collaboration;interestbased_orga;Interest-based organization;;;;
+collaboration;none;None;;;;
+;;;;;;
+groupcategories;individual;Individual;;;;
+groupcategories;informal;Informal community entity;;;;
+groupcategories;formal;Formal community entity;;;;
+;;;;;;
+sex;female;Female;;;;
+sex;male;Male;;;;
+sex;other;Other;;;;
+;;;;;;
+member_status;refugee;Refugee/Asylum-seeker;;;;
+member_status;host_member;Host community member;;;;
+member_status;idp;Internally displaced person;;;;
+member_status;diaspora;Diaspora Member;;;;
+member_status;legal_residing_foreign;Legally residing foreign nationals;;;;
+member_status;returnee;Returnees;;;;
+member_status;mixed_movement;Person in mixed movement situation;;;;
+;;;;;;
+number_members;more_then_100;More then 100   ;;;;
+number_members;more_then_50;More then 50;;;;
+number_members;more_then_20;More then 20  ;;;;
+number_members;less_than_20;Less than 20;;;;
+;;;;;;
+members;host_member;Host community members;;;;
+members;refugee_member;Refugees/Asylum-seekers;;;;
+members;IDP_member;Internally displaced persons;;;;
+members;diaspora_member;Diaspora members ;;;;
+members;legal_residing_foreign;Legally residing foreign nationals;;;;
+members;returnee;Returnees;;;;
+members;mixed_movement;Persons in mixed movement situtations;;;;
+;;;;;;
+membership;anyone;Anyone who is interested;;;;
+membership;fulfill_criteria;Only those who fulfill criteria;;;;
+membership;no_membership;No membership requirement;;;;
+membership;certain_area;People living in certain area ;;;;
+membership;specific_background;People with specific background;;;;
+;;;;;;
+establishment;traditional_leaders;Through traditional leaders;;;;
+establishment;religious_leaders;Through religious leaders;;;;
+establishment;individual_initiative;Through individual/family initiative;;;;
+establishment;interested_group;Initiated by interested group of people ;;;;
+establishment;umbrella_orga;With support of umbrella organization ;;;;
+establishment;diaspora_members ;With support of diaspora members ;;;;
+establishment;funding_provider;With support of fund provider;;;;
+establishment;public_institution ;as a public institution ;;;;
+establishment;prof_association;as a professional association;;;;
+establishment;government;By the government;;;;
+;;;;;;
+structure;ad_hoc_structure;Ad hoc structure  ;;;;
+structure;traditional_structure;Traditional structure ;;;;
+structure;elected_structure;Elected structure   ;;;;
+structure;selected_structure;Selected/Nominated structure;;;;
+structure;fixed_structure;Fixed structure;;;;
+structure;no_specific;No specific structure ;;;;
+;;;;;;
+percent;0.0;0%;;;;
+percent;0.1;10%;;;;
+percent;0.2;20%;;;;
+percent;0.3;30%;;;;
+percent;0.4;40%;;;;
+percent;0.5;50%;;;;
+percent;0.6;60%;;;;
+percent;0.7;70%;;;;
+percent;0.8;80%;;;;
+percent;0.9;90%;;;;
+percent;1;100%;;;;
+;;;;;;
+service;sharing_info;Sharing information on availability of and accessibility to the services ;;;;Prevention activities
+service;awareness_campaign;Awareness activities;;;;Prevention activities
+service;community_dialogue;Community dialogue;;;;Prevention activities
+service;organizing_events;Organizing or participating in community events ;;;;Prevention activities
+service;recreation_activities;Recreational activities;;;;Prevention activities
+service;training_education;Skill and knowledge development support;;;;Skill development and income generation
+service;poc_identification;Identifying persons with specific needs;;;;Response activities
+service;mediation;Supporting for alternative dispute resolution;;;;Response activities
+service;community_building;Community building;;;;Community building
+service;community_initiatives;Taking or supporting community-led initiatives;;;;Community building
+service;advocacy_support;Taking lead or participating in advocacy ;;;;Advocacy/consultation/networking (with)– agencies, local authorities, donors, national authorities, media, entrepreneurs, academics
+service;service_delivery;Helping people in need with specific support/action;;;;Service Delivery
+service;facilitating_access;Facilitating access to services;;;;
+service;facilitating_complaints;Facilitating complaints to service provider;;;;
+service;facilitating_feedback;Facilitating feedback;;;;
+service;identifying_concerns;Identifying concerns, challenges and solutions;;;;
+service;resolving_dispute;Resolving inter-community disputes;;;;
+service;certain_empowerment;Empowering certain segment of community;;;;
+service;language_support;Language support;;;;
+service;technical_advices;Technical/professional advices;;;;
+service;preventative_activities;Preventative activities;;;;
+;;;;;;
+workarea;education;Education ;;;;
+workarea;child_protection ;Child Protection ;;;;
+workarea;housing_shelter ;Housing/land issues;;;;
+workarea;water_sanitation ;Water/Sanitation/Hygiene;;;;
+workarea;health_nutrition ;Health/Nutrition ;;;;
+workarea;sgbv;Gender empowerment;;;;
+workarea;materials ;Food and household materials;;;;
+workarea;psychosocial_support ;Mental Health & Psychosocial Support ;;;;
+workarea;social_cohesion;Social Cohesion;;;;
+workarea;detention ;Detention monitoring and alternatives to detention;;;;
+workarea;civil_documentation ;Birth registration and other documentation;;;;
+workarea;Livelihood ;Livelihood & Income generation;;;;
+workarea;legal_aid;Legal Aid/Support ;;;;
+workarea;group_empowerment;Specific group empowerment;;;;
+workarea;protection;Protection and human rights;;;;
+workarea;integration;Integration or Reintegration;;;;
+workarea;justice_access;Access to justice;;;;
+;;;;;;
+social_recognition;counsellor;as counsellor/advisor ;;;;
+social_recognition;community_worker;as community worker/volunteer;;;;
+social_recognition;religious_leader;as religious leader ;;;;
+social_recognition;traditional_leader;as traditional leader ;;;;
+social_recognition;youth_leader;as youth activist;;;;
+social_recognition;community_mediator;as community mediator or negotiator ;;;;
+social_recognition;women_activist;as women activist;;;;
+social_recognition;social_activist;as social activist ;;;;
+social_recognition;recreationist;as recreationist ;;;;
+social_recognition;solution_finder;as solution finder ;;;;
+social_recognition;influential_figure;as influential person;;;;
+social_recognition;community_intellectual;as community intellectual  ;;;;
+social_recognition;info_source;as informant;;;;
+social_recognition;helper;as helper or supporter;;;;
+social_recognition;community_innovator;as community innovator;;;;
+social_recognition;role_model;as role model;;;;
+;;;;;;
+skill_development;children_below_13;For children ( < 13 );;;;
+skill_development;children_14-17;For children ( 14-17 );;;;
+skill_development;youth;For youth ( 18-24 );;;;
+skill_development;adult_women;For adult women;;;;
+skill_development;adult_men;For adult men;;;;
+;;;;;;
+timeavailable;little;daily;;;;
+timeavailable;some;more than twice a week;;;;
+timeavailable;lot;more than once a week;;;;
+timeavailable;daily_basis;more than twice a month;;;;
+timeavailable;twice_week;more than once a month;;;;
+timeavailable;flexibly;flexibly on request;;;;
+;;;;;;
+targeted_persons;anybody;Anybody who approaches;;;;
+targeted_persons;people_from_area;People from this area;;;;
+targeted_persons;ref_asylum_seekers;Refugees/Asylum seekers;;;;
+targeted_persons;idp;Internally displaced persons;;;;
+targeted_persons;host_comm;Host community members;;;;
+targeted_persons;returnees;Returnees;;;;
+targeted_persons;mixed_movement;People in mixed movements;;;;
+;;;;;;
+specific_group;women_and_girls;Women and girls;;;;
+specific_group;youth;Youth (15-24);;;;
+specific_group;adolescent;Adolescent (10-14);;;;
+specific_group;children;Children (< 18);;;;
+specific_group;older_persons;Older persons (60 +);;;;
+specific_group;disabled_persons;Persons with disabilities ;;;;
+specific_group;unaccompanied_children;Unaccompanied/separated children ;;;;
+specific_group;unaccompanied_older_persons;Unaccompanied older persons;;;;
+specific_group;lgbti_persons;LGBTI persons ;;;;
+specific_group;minority_commmembers;Minority community members ;;;;
+specific_group;survivor_gb_violence;Survivor of gender-based violence ;;;;
+specific_group;people_need_psychosoc_support;People living with mental health and psychosocial problems;;;;
+specific_group;marginalized_comm_members;Marginalized members in the community;;;;
+specific_group;socioecon_vulnerable;Socio-economically vulnerable  ;;;;
+specific_group;female_headed;Female headed households;;;;
+specific_group;orphans;Orphans;;;;
+specific_group;single_individuals;Single and house-bound individuals ;;;;
+specific_group;none;No focus on a specific group;;;;
+;;;;;;
+cap_human_resources;community_volunteers;Community volunteers;;;;
+cap_human_resources;skilled_community_members ;Skilled community members ;;;;
+cap_human_resources;skilled_external;Skilled group of people from outside the community ;;;;
+cap_human_resources;professionals ;Professionals ;;;;
+cap_human_resources;influential_leaders;Influential community leaders and members ;;;;
+cap_human_resources;community_network ;Network members;;;;
+cap_human_resources;collaborating_partner;Collaborating agency or authority;;;;
+cap_human_resources;knowledgeable_members ;Recognized and knowledgeable community members ;;;;
+cap_human_resources;dedicated_staff ;Dedicated staff ;;;;
+;;Local community based organization or authotity;;;;
+meeting_space;sport_club;Sport Club ;;;;
+meeting_space;park;Park or open space;;;;
+meeting_space;public_place;Public Place/Building  ;;;;
+meeting_space;religious_place;Religious Place;;;;
+meeting_space;community_center;Community Center  ;;;;
+meeting_space;community_event_space;Community Event Space;;;;
+meeting_space;youth_club;Youth Club;;;;
+meeting_space;community_office;Office of the Community;;;;
+meeting_space;school;School or educational institution;;;;
+meeting_space;local_authority;Office of the local authority/municipality;;;;
+meeting_space;private_entity;Office of a private entity;;;;
+meeting_space;no_specific_place;No specific place;;;;
+;;;;;;
+access_space;own_space;Own space;;;;
+access_space;rental_basis;Rental basis;;;;
+access_space;freely_available;Freely available;;;;
+access_space;ad_hoc;On ad-hoc basis;;;;
+access_space;randomly;Randomly used;;;;
+access_space;public;Public space;;;;
+access_space;pre_agreement;On pre-agreement basis;;;;
+;;;;;;
+conduciveness;not;Not conducive;;;;
+conduciveness;minimally;Minimally conducive;;;;
+conduciveness;largely;Largely conducive;;;;
+conduciveness;very;Very conducive;;;;
+;;;;;;
+information_platform;webpage;Webpage  [browsing page - manual entry] ;;;;
+information_platform;facebook;Facebook  [page name - manual entry];;;;
+information_platform;blog;Blog [browsing page - manual entry];;;;
+information_platform;email;Email  [email ID - manual entry];;;;
+information_platform;phone;Phone call;;;;
+information_platform;whatsapp_sms_vibor;WhatsApp/SMS/Viber [contact details - manual entry];;;;
+information_platform;community_meeting;Neighborhood/community meeting;;;;
+information_platform;community_network ;Social/Community network ;;;;
+information_platform;posters;Leaflets/broachers/posters;;;;
+information_platform;local_radio;Local Radio/FM [name of the station - manual entry];;;;
+information_platform;e_newspaper;e-newspaper [name - manual entry];;;;
+information_platform;home_visit;Home visit;;;;
+information_platform;personally;Meeting in-person;;;;
+information_platform;local_network;Through local social network;;;;
+information_platform;community_based_event;Drama and community-based event;;;;
+information_platform;group_discussion;Group discussion/meeting ;;;;
+information_platform;events_pecial_days ;Organizing events during the special days ;;;;
+;;;;;;
+duration_services;less_6_month;Less then 6 month;;;;
+duration_services;more_6_month;More then 6 month;;;;
+duration_services;more_1_years;More then 1 years;;;;
+duration_services;more_3_years;More then 3 year;;;;
+duration_services;more_5_years;More then 5 years;;;;
+;;;;;;
+yes_no;yes;Yes;;;;
+yes_no;no;No;;;;
+;;;;;;
+skills;tailor;Tailoring/fashion design;;;;hard_skill
+skills;hairdesign;Hair styling and cosmetology;;;;hard_skill
+skills;vender;Dental care;;;;hard_skill
+skills;entrepreneur;Entrepreneur/vender;;;;hard_skill
+skills;stylist;Beautician/styling;;;;hard_skill
+skills;mechanical;Mechanical;;;;hard_skill
+skills;shelter;Shelter/housing mediation/negotiation;;;;hard_skill
+skills;pharmacist;Pharmacist;;;;hard_skill
+skills;cybercafé;Plumbing/fitting;;;;hard_skill
+skills;professional;Career counseling/support with formal documents;;;;hard_skill
+skills;appliance;Appliance repair and maintenance;;;;hard_skill
+skills;electrician;Electrician;;;;hard_skill
+skills;carpentry;Carpentry/Joinery;;;;
+skills;construction;Construction;;;;
+skills;veterinary;Veterinary technology;;;;
+skills;computer;Computer support;;;;
+skills;food_processing;Food processing/services;;;;
+skills;public_safety;Public safety;;;;
+skills;bookkeeping;Bookkeeping, accounting, auditing;;;;
+skills;children_service;Children services;;;;
+skills;health_care;Health care and social assistance;;;;
+skills;manufacturing;Manufacturing;;;;
+skills;trucking;Trucking;;;;
+skills;car_servicing;Car servicing;;;;
+skills;handicraft;Handicraft;;;;
+skills;training;Facilitating training;;;;
+skills;sign_language;Sign language;;;;
+;;;;;;
+talents;singing;Singing;;;;talent
+talents;dancing;Dancing;;;;talent
+talents;playing_music;Music playing/composing;;;;talent
+talents;acting;Acting;;;;talent
+talents;commedian;Commedian;;;;
+talents;literature_writing;Literature writing;;;;talent
+talents;drawing;Drawing/painting;;;;talent
+talents;athlete;Athlete/sport playing;;;;talent
+talents;artisan;Artisan;;;;talent
+talents;storytelling;Storytelling;;;;talent
+talents;innovation;Innovation;;;;talent
+;;;;;;
+yes_no_meeting;yes_here;Yes - here at this place;;;;
+yes_no_meeting;yes_other;Yes - at another place;;;;
+yes_no_meeting;no;No;;;;
+;;;;;;
+reward;support_work;Specific support linked to the work;;;;
+reward;certification;Appreciation through certificate;;;;
+reward;public;Providing social recognition;;;;
+reward;promotion;Promotion of the good work;;;;
+reward;engaging_reasons;Knowing reasons for volunteering;;;;
+reward;comm_loop;Keeping in the communication loop;;;;
+reward;sharing_ideas;Getting access to a forum to share experiences and ideas;;;;
+;;;;;;
+ethical_standards;code_conduct;Through code of conduct;;;;
+ethical_standards;agreed_practice;Through agreed practices;;;;
+ethical_standards;ad-hoc_basis;Once complaint is received;;;;
+ethical_standards;planned;We plan to adopt minimum behavioural standard;;;;
+ethical_standards;not_thought;Have not thought of it;;;;
+;;;;;;
+secondary_provider;individual_ref;Yes, to an individual;;;;
+secondary_provider;community_ref;Yes, to a community;;;;
+secondary_provider;no_referral;No, I don't refer individuals to others;;;;
+;;;;;;
+support;community_space;Having better or more community space;;;;
+support;human_resources;Having more actively engaged community members;;;;
+support;skills;Having more specific skills to provide more services;;;;
+support;communication;Having better communication channels;;;;
+support;community_network;Having a better network with other communities ;;;;
+;;;;;;

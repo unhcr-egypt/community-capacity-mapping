@@ -81,17 +81,17 @@ source("code/0-packages.R")
 ############################################################################################
 ############################################################################################
 ## 1) load data
-data.or <- read.csv("data/data.csv", sep=",", encoding="UTF-8", na.strings="n/a")
+data.or <- read.csv("../data/data.csv", sep=",", encoding="UTF-8", na.strings="n/a")
 data.process <- data.frame(data.or)
 
-form.or <- read.csv("data/form.csv", sep=";", encoding="UTF-8", na.strings="n/a")
+form.or <- read.csv("data/form.csv", sep=",", encoding="UTF-8", na.strings="n/a")
 
 
 
 ############################################################################################
 ############################################################################################
 ## 2) Community introductory questions (to be filled by surveyor)
-data.intro <- data.process[,5:21]
+data.intro <- data.process[,2:9]
 
 ## 2.1) Status of surveyor
 df.statussurveyor <- data.intro[,2]
@@ -154,7 +154,7 @@ plot(p.mapcountry)
 df.mapgovernorate <- data.intro[,5]
 data <- data.frame(table(df.mapgovernorate))
 colnames(data) <- c("name", "freq")
-data <- merge(data, form.or, by = "name")
+data <- merge(data, form.or, by = "name") ##value mismatch data (ARE) form(EGY)
 data <- data[which(data[,3] == "adm1"),]
 data$freq <- as.numeric(data$freq/sum(data$freq))
 
